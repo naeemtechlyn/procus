@@ -3,8 +3,45 @@
     background-color: $secondary-color;
     border-bottom: 1px solid $border-color;
     padding: 15px 0;
+    .logo-area {
+        img {
+            max-width: 200px;
+        }
+    }
     .nav-right-content {
         text-align: right;
+        @include tablet {
+            display: none;
+        }
+        @include all-phone {
+            display: none;
+        }
+    }
+
+    @include tablet {
+        padding: 30px 0;
+    }
+    @include all-phone {
+        padding: 30px 0;
+    }    
+}
+
+.menu-area.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: $secondary-color;
+    animation: fixed_top .8s;
+}
+
+@keyframes fixed_top {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 0;
     }
 }
 
@@ -13,11 +50,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
     .hero-content-box {
         position: relative;
         padding: 150px 0;
         border-left: 1px solid $border-color;
         border-right: 1px solid $border-color;
+        @include tablet {
+            padding: 120px 0 160px 10px;
+        }
+        @include all-phone {
+            padding: 100px 0 180px 10px;
+        }
     }
     p {
         max-width: 360px;
@@ -26,27 +70,65 @@
         display: flex;
         align-items: center;
         gap: 30px;
+        @include all-phone {
+            display: inherit;
+        }
         img {
-            max-width: 340px;
+            max-width: 320px;
         }
     }
     .hero-top-content {
         img.vector-shape {
             width: auto;
             margin-top: -100px;
+            @include tablet {
+                display: none;
+            }
+            @include all-phone {
+                display: none;
+            }
+        }
+        h1 {
+            animation: 1.5s fadeInLeft;
+            span.gradient-bg {
+                background-image: linear-gradient(to right, #353501 15%, $secondary-color 50%);
+                padding: 0 10px;
+                border-radius: 50px;
+            }
         }
     }
     .hero-bottom-content {
+        h1 {
+            animation: 1.5s fadeInRight;
+        }
         img.vector-shape {
             width: 110%;
             margin-top: 30px;
             margin-left: -50px;
+            @include tablet {
+                display: none;
+            }
+            @include all-phone {
+                display: none;
+            }
+        }
+        p,
+        .btn-group {
+            animation: 1.5s fadeInUp;
+            img {
+                @include all-phone {
+                    margin: 20px 0;
+                }
+            }
         }
     }
     .hero-social {
         position: absolute;
         bottom: 40px;
         right: 0;
+        @include all-phone {
+            bottom: 20px;
+        }
         li {
             display: inline-block;
             margin: 0 10px;
@@ -72,12 +154,31 @@
 
 .counter-area {
     background-color: $secondary-color;
-    position: relative;    
+    position: relative;   
+    overflow: hidden; 
     img.counter-3d {
         width: auto;
         position: absolute;
         top: 120px;
         left: 80px;
+        @include screen-1400 {
+            width: 80px;
+            top: 80px;
+        }
+        @include screen-1200 {
+            width: 80px;
+            top: 80px;
+        }
+        @include desktop {
+            width: 80px;
+            top: 80px;
+        }
+        @include tablet {
+            display: none;
+        }
+        @include all-phone {
+            display: none;
+        }
     }
 }
 
@@ -128,11 +229,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
     img.service-3d {
         width: auto;
         position: absolute;
         top: 0;
         right: 0;
+        @include tablet {
+            display: none;
+        }
+        @include all-phone {
+            display: none;
+        }
     }
 }
 
@@ -143,8 +251,19 @@
     background-size: cover;
     background-color: $secondary-color;
     padding-bottom: 200px;
+    overflow: hidden;
     .slick-slide {
         margin: 0 50px 0 0;
+    }
+    @include tablet {
+        margin: 0; 
+        padding-left: 30px;
+        padding-bottom: 200px;
+    }
+    @include all-phone {
+        margin: 0; 
+        padding-left: 20px;
+        padding-bottom: 80px;
     }
     .slick-current {
         .portfolio-image {
@@ -204,6 +323,12 @@
 
 .section-top-btn {
     text-align: right;
+    @include tablet {
+        margin-top: 20px;
+    }
+    @include all-phone {
+        margin-top: 20px;
+    }
 }
 
 .brand-area {
@@ -214,6 +339,12 @@
         position: absolute;
         top: 0;
         left: 0;
+        @include tablet {
+            display: none;
+        }
+        @include all-phone {
+            display: none;
+        }
     }
     .brand-logo {
         width: 230px;
@@ -233,5 +364,9 @@
     }
     .slick-slide {
         margin: 0 15px;
+        @include tablet {
+            margin: 0 10px;
+        }
     }
 }
+

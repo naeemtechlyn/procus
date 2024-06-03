@@ -42,21 +42,16 @@
             slidesToScroll: 1,
             arrows: false,
             responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-            },
-            {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 }
-            }, {
+            },
+            {
                 breakpoint: 768,
                 settings: {
+                    dots: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 }
@@ -69,7 +64,7 @@
             dots: false,
             infinite: true,
             speed: 800,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 1200,
             slidesToShow: 6,
             slidesToScroll: 1,
@@ -77,7 +72,6 @@
             centerMode: true,
             variableWidth: true,
         });
-
 
     });
 
@@ -90,6 +84,14 @@
             ScrollTop.fadeIn(1000);
         } else {
             ScrollTop.fadeOut(1000);
+        }
+
+        // navbar fix
+        const headerHeight = $(".header-area").outerHeight();
+        if ($(this).scrollTop() > headerHeight) {
+            $('.menu-area').addClass("fixed-top");
+        } else {
+            $('.menu-area').removeClass("fixed-top");
         }
 
     });

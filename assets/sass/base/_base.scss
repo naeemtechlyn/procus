@@ -5,12 +5,16 @@ body {
     font-size: 16px;
     font-family: $primary-font;
     font-weight: 400;
+    overflow-x: hidden;
 }
 
 h1 {
     color: $white-color;
     font-size: 72px;
     font-weight: 700;
+    @include all-phone {
+        font-size: 60px;
+    }
 }
 
 h2 {
@@ -20,12 +24,18 @@ h2 {
     span {
         color: $primary-color;
     }
+    @include all-phone {
+        font-size: 42px;
+    }
 }
 
 h3 {
     color: $heading-color;
     font-size: 36px;
     font-weight: 700;
+    @include all-phone {
+        font-size: 30px;
+    }
 }
 
 h4 {
@@ -40,6 +50,9 @@ h6 {
     color: $heading-color;
     font-size: 18px;
     font-weight: 500;
+    @include all-phone {
+        font-size: 16px;
+    }
 }
 
 h1,

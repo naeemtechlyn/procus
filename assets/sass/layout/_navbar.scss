@@ -11,6 +11,13 @@ nav {
             line-height: 1.7;
             z-index: 1;
 
+            @include tablet {
+                margin: 0;
+            }
+            @include all-phone {
+                margin: 0;
+            }
+
             &.has-submenu {
                 &::after {
                     content: '\2b';
@@ -109,23 +116,19 @@ nav {
 // phone menu
 .mean-container {
     .mean-nav {
-        background: $primary-color;
+        background: $secondary-color;
 
         @include tablet {
-            margin-top: 90px;
+            margin-top: 88px;
         }
 
-        @include landscape-phone {
-            margin-top: 60px;
-        }
-
-        @include portrait-phone {
-            margin-top: 50px;
+        @include all-phone {
+            margin-top: 88px;
         }
     }
 
     .mean-bar {
-        z-index: 0;
+        z-index: 1;
 
         a.meanmenu-reveal {
             background: $primary-color;
@@ -133,16 +136,11 @@ nav {
             right: 20px !important;
 
             @include tablet {
-                top: 15px;
+                top: 17px;
             }
 
-            @include landscape-phone {
-                top: 2px;
-            }
-
-            @include portrait-phone {
-                top: -3px;
-
+            @include all-phone {
+                top: 17px;
             }
         }
     }

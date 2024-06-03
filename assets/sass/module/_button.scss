@@ -12,6 +12,10 @@
     border-radius: 30px;
     border: 1px solid transparent;
 
+    @include desktop {
+        padding: 12px 24px;
+    }
+
     &:hover {
         color: $primary-color;
         background-color: transparent;
@@ -31,6 +35,10 @@
     border: 1px solid $primary-color;
     transition: $transition;
     border-radius: 30px;
+
+    @include desktop {
+        padding: 12px 24px;
+    }
 
     &:hover {
         color: $secondary-color;
