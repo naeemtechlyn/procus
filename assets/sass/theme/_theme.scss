@@ -1,0 +1,237 @@
+/* theme */
+.menu-area {
+    background-color: $secondary-color;
+    border-bottom: 1px solid $border-color;
+    padding: 15px 0;
+    .nav-right-content {
+        text-align: right;
+    }
+}
+
+.hero-area {
+    background-image: url('../images/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .hero-content-box {
+        position: relative;
+        padding: 150px 0;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+    }
+    p {
+        max-width: 360px;
+    }
+    .btn-group {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        img {
+            max-width: 340px;
+        }
+    }
+    .hero-top-content {
+        img.vector-shape {
+            width: auto;
+            margin-top: -100px;
+        }
+    }
+    .hero-bottom-content {
+        img.vector-shape {
+            width: 110%;
+            margin-top: 30px;
+            margin-left: -50px;
+        }
+    }
+    .hero-social {
+        position: absolute;
+        bottom: 40px;
+        right: 0;
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            a {
+                color: $white-color;
+                font-size: 24px;
+                transition: $transition;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .vector-scroll-down {
+        width: auto;
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+}
+
+.counter-area {
+    background-color: $secondary-color;
+    position: relative;    
+    img.counter-3d {
+        width: auto;
+        position: absolute;
+        top: 120px;
+        left: 80px;
+    }
+}
+
+.counter-single {
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+    margin: 0 auto 30px;
+    height: 230px;
+    width: 230px;
+    border: 1px solid $white-color;
+    border-radius: 50%;
+    transition: $transition;
+    &:hover {
+        background-color: $primary-color;
+        border: 1px solid transparent;
+        span.counter,
+        span.plus-sign {
+            color: $secondary-color;
+            -webkit-text-fill-color: $secondary-color;
+            -webkit-text-stroke-width: 0px;
+        }
+        h6 {
+            color: $secondary-color;
+        }
+    }
+    .counter-number {
+        padding-top: 60px;
+    }
+    span.counter,
+    span.plus-sign {
+        color: $white-color;
+        font-size: 72px;
+        line-height: 72px;
+        font-weight: 700;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        transition: $transition;
+    }
+    h6.counter-text {
+        transition: $transition;
+    }
+}
+
+.service-area {
+    position: relative;
+    background-image: url('../images/service-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    img.service-3d {
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.portfolio-area {
+    background-image: url('../images/portfolio-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $secondary-color;
+    padding-bottom: 200px;
+    .slick-slide {
+        margin: 0 50px 0 0;
+    }
+    .slick-current {
+        .portfolio-image {
+            img {
+                border: 1px solid $primary-color;
+            }
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        bottom: -80px;
+        transform: translateX(-50%);
+        margin-left: -50px;
+        border: 1px solid $border-color;
+        border-radius: 20px;
+    }
+    .slick-dots li {
+        display: inline;
+        margin: 0 30px;
+    }
+    .slick-dots button {
+        color: transparent;
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        line-height: 0;
+        border: none
+    }
+    .slick-dots .slick-active button {
+        background-color: $primary-color;
+    }
+}
+
+.portfolio-single {
+    .portfolio-image {
+        img {
+            border-radius: 20px;
+            border: 1px solid transparent;
+            transition: $transition;
+        }
+    }
+
+    h3 {
+        a {
+            color: $white-color;
+            transition: $transition;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.section-top-btn {
+    text-align: right;
+}
+
+.brand-area {
+    background-color: $black-color;
+    position: relative;    
+    img.brand-3d {
+        width: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .brand-logo {
+        width: 230px;
+        height: 230px;
+        border: 1px solid $white-color;
+        border-radius: 50%;
+        img {
+            width: auto;
+            margin: auto;
+            padding-top: 90px;
+        }
+    }
+    .slick-current {
+        .brand-logo {
+            border: 1px solid $primary-color;                
+        }
+    }
+    .slick-slide {
+        margin: 0 15px;
+    }
+}
