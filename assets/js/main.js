@@ -72,6 +72,49 @@
             centerMode: true,
             variableWidth: true,
         });
+        
+        // testimonial slider
+        $('.testimonial-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 1000,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            vertical: true,
+            verticalSwiping: true,
+        });
+
+        // blog slider
+        $('.blog-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 1000,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: true,
+            responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            ]
+        });
 
     });
 

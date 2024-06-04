@@ -288,16 +288,19 @@
     }
     .slick-dots button {
         color: transparent;
-        background-color: transparent;
+        background-color: $primary-color;
         width: 20px;
         height: 20px;
         border-radius: 50%;
         cursor: pointer;
         line-height: 0;
-        border: none
+        border: none;
+        opacity: 0;
+        visibility: hidden;
     }
     .slick-dots .slick-active button {
-        background-color: $primary-color;
+        opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -370,3 +373,461 @@
     }
 }
 
+.testimonial-area {
+    position: relative;
+    background-image: url('../images/testimonial-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    img.testimonial-3d {
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include tablet {
+            display: none;
+        }
+        @include all-phone {
+            display: none;
+        }
+    }
+
+    .slick-slide {
+        border: 1px solid $primary-color;
+    }
+
+    .slick-dots {
+        position: absolute;
+        top: 50%;
+        right: -70px;
+        transform: translateY(-50%);
+    }
+    .slick-dots li {
+        margin: 20px 0;
+    }
+    .slick-dots button {
+        color: transparent;
+        background-color: $border-color;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        line-height: 15px;
+        border: none;
+        transform: scale(.5);
+    }
+    .slick-dots .slick-active button {
+        background-color: $primary-color;
+    }
+}
+
+.testimonial-slide {
+    position: relative;
+    background-image: url('../images/testimonial-slide-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 150px;
+    border-radius: 20px;
+    @include desktop {
+        padding: 60px;
+    }
+    @include tablet {
+        padding: 50px;
+    }
+    @include all-phone {
+        padding: 40px;
+    }
+
+    span.testimonial-quote-icon {
+        font-size: 80px;
+        display: block;
+        color: rgba($primary-color, .4);
+    }
+
+    span.quote-text {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .testimonial-content {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include all-phone {
+            display: inherit;
+        }
+        .content-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @include all-phone {
+                margin-bottom: 30px;
+            }
+            .author-img {
+                img {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                    border: 1px solid $primary-color;
+                }
+            }
+        }
+        .author-text {
+            p {
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.team-area {
+    background-color: $black-color;
+}
+
+.team-member {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    &:hover {
+        .hover-state {
+            opacity: 1;
+            visibility: visible;
+        }
+        img {
+            transform: rotate(2deg) scale(1.1);
+        }
+    }
+    img {
+        transition: $transition;
+    }
+    .hover-state {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-image: linear-gradient(rgba($primary-color, 0.2), rgba($black-color, .2));
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 0, 0.1);
+        border-bottom: transparent;
+        padding: 24px;
+        transition: $transition;
+        opacity: 0;
+        visibility: hidden;
+        h4 {
+            a {
+                color: $white-color;
+                transition: $transition;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+        span {
+            text-transform: capitalize;
+        }
+        .team-social {
+            margin-top: 10px;
+            li {
+                display: inline;
+                margin-right: 15px;
+                a {
+                    color: $white-color;
+                    font-size: 20px;
+                    transition: $transition;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cta-area {
+    background-image: url('../images/cta-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.cta-box {
+    background-image: url('../images/cta-box-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 80px 150px;
+    text-align: center;
+    border-radius: 20px;
+    @include desktop {
+        padding: 80px;
+    }
+    @include tablet {
+        padding: 80px 50px;
+    }
+    @include all-phone {
+        padding: 80px 20px;
+    }
+    h2 {
+        color: $white-color;
+    }
+}
+
+.blog-area {
+    background-color: $black-color;
+    .slick-current {
+        .blog-image {
+            img {
+                border: 1px solid $primary-color;
+            }
+        }
+        h4 {
+            a {
+                color: $primary-color;
+            }
+        }
+    }
+    .slick-slide {
+        margin: 0 50px 0 0;
+        @include tablet {
+            padding-left: 20px;
+        }
+        @include all-phone {
+            padding-left: 20px;
+        }
+    }
+    .blog-slider {
+        margin-left: -50px;
+    }
+}
+
+.blog-single-slide {
+    .blog-image {
+        img {
+            border-radius: 20px;
+            border: 1px solid transparent;
+        }
+    }
+    .blog-meta {
+        margin: 20px 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            a {
+                color: $primary-color;
+                text-transform: capitalize;
+            }
+        }
+        li.separator {
+            margin: 0 10px;
+        }
+    }
+    h4 {
+        a {
+            color: $white-color;
+            transition: $transition;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+    .blog-tags {
+        margin-top: 20px;
+        li {
+            display: inline;
+            margin-right: 10px;
+            a {
+                display: inline-block;
+                color: $white-color;
+                font-size: 14px;
+                padding: 5px 10px;
+                background-color: $secondary-color;
+                text-transform: capitalize;
+                border-radius: 30px;
+                transition: $transition;
+                &:hover {
+                    color: $secondary-color;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+    .blog-btn {
+        font-size: 20px;
+        font-weight: 500;
+        color: $white-color;
+        text-transform: capitalize;
+        transition: $transition;
+        display: inline-block;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.get-in-touch-area {
+    background-image: url('../images/get-in-touch-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 200px 0 400px;
+    background-color: $secondary-color;
+    text-align: center;
+    @include tablet {
+        padding: 80px 0 250px;
+    }
+    @include all-phone {
+        padding: 80px 0 250px;
+    }
+    a.big-title {
+        color: $white-color;
+        font-size: 120px;
+        border-bottom: 5px solid $white-color;
+        @include tablet {
+            font-size: 72px;
+        }
+        @include all-phone {
+            font-size: 48px;
+        }
+    }
+}
+
+.footer-area {
+    background: $secondary-color;
+}
+
+.footer-widget-box {
+    margin-bottom: 30px;
+}
+
+.footer-widget {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-logo {
+    img {
+        width: 200px;
+        margin-bottom: 30px;
+        @include portrait-phone {
+            .footer-logo img {
+                width: 180px;
+            }
+        }
+    }
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    a {
+        font-size: 20px;
+        color: $white-color;
+        transition: $transition;
+        &:hover {
+            color: $primary-color
+        }
+    }
+}
+
+.footer-widget-title {
+    color: $white-color;;
+    margin-bottom: 30px;
+}
+
+.footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    a {
+        color: $white-color;
+        text-transform: capitalize;
+        transition: $transition;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.footer-contact {
+    li {
+        color: $white-color;
+        margin-bottom: 20px;
+        a {
+            color: $white-color;
+            transition: $transition;
+            span.contact-icon {
+                font-size: 18px;
+                margin-right: 10px;
+                transition: $transition;
+                color: $white-color;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.copyright {
+    background: $secondary-color;
+    .copyright-content {
+        padding: 30px 0;
+        border-top: 1px solid $border-color;
+    }
+}
+
+.copyright-text {
+    color: $white-color;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    a {
+        color: $primary-color;
+    }
+}
+
+.footer-menu {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    @include tablet {
+        text-align: left;
+        margin-top: 20px;
+    }
+    @include all-phone {
+        text-align: left;
+        margin-top: 20px;
+    }
+    li {
+        display: inline-block;
+        margin-left: 20px;
+        @include tablet {
+            margin-left: 0;
+            margin-right: 20px;
+        }
+        @include all-phone {
+            margin-left: 0;
+            margin-right: 20px;
+        }
+        a {
+            color: $white-color;
+            transition: $transition;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
