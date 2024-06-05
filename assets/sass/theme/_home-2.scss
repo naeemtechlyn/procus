@@ -3,6 +3,19 @@
     background-image: url('../images/hero-bg-home-2.png');
     position: relative;
     text-align: center;
+    overflow: hidden;
+    img.hero-3d-home-2 {
+        width: auto;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        @include tablet {
+            display: none;
+        }
+        @include all-phone {
+            display: none;
+        }
+    }
     .hero-content-box-2 {
         padding: 220px 0 120px;
         .title-tag {

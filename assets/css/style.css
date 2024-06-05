@@ -1722,7 +1722,19 @@ nav {
 .hero-home-2 {
   background-image: url("../images/hero-bg-home-2.png");
   position: relative;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
+  .hero-home-2 img.hero-3d-home-2 {
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    left: 10%; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .hero-home-2 img.hero-3d-home-2 {
+        display: none; } }
+    @media (max-width: 767.98px) {
+      .hero-home-2 img.hero-3d-home-2 {
+        display: none; } }
   .hero-home-2 .hero-content-box-2 {
     padding: 220px 0 120px; }
     .hero-home-2 .hero-content-box-2 .title-tag {
