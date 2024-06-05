@@ -1,0 +1,167 @@
+/* home-02 */
+.hero-home-2 {
+    background-image: url('../images/hero-bg-home-2.png');
+    position: relative;
+    text-align: center;
+    .hero-content-box-2 {
+        padding: 220px 0 120px;
+        .title-tag {
+            padding: 12px 50px;
+            background-image: linear-gradient(to right, rgba($black-color, 0.2), rgba($white-color, .2));
+            border-radius: 15px;
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+    }
+    h1 {
+        span {
+            color: $primary-color;
+        }
+    }
+    p {
+        max-width: 80%;
+        margin: 20px auto 30px;
+    }
+    .hero-btn-group-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .hero-video-wrapper a {
+            color: $primary-color;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+        .hero-video-wrapper a .video-btn {
+            width: 24px;
+            height: 24px;
+            font-size: 16px;
+            line-height: 25px;
+            color: $secondary-color;
+            background-color: $primary-color;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            margin-right: 5px;
+            padding-left: 2px; 
+        }
+    }
+    .hero-social-2 {
+        background-image: linear-gradient(to right, rgba($white-color, 0.2), rgba($black-color, .2));
+        border-radius: 20px;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        border: 1px solid rgba(255, 255, 0, 0.1);
+        display: inline-block;
+        margin-top: 80px;
+        padding: 15px 24px;
+        li {
+            display: inline;
+            margin: 0 15px;
+            a {
+                display: inline-block;
+                padding: 5px 10px;
+                color: $white-color;
+                background-color: transparent;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: capitalize;
+                transition: $transition;
+                &:hover {
+                    color: $secondary-color;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.marquee-home-2 {
+    padding: 15px 0 10px;
+    background-color: $black-color;
+    .marque-bg {
+        h4 {
+            color: $heading-color-home-2;
+            font-size: 68px;
+            font-weight: 700;
+            @include all-phone {
+                font-size: 60px;
+            }
+            span {
+                display: inline-block;
+                margin: 0 60px;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 12px;
+                    left: -80px;
+                    width: 60px;
+                    height: 60px;
+                    background-image: url('../images/marquee-vector-home-2.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include all-phone {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-area {
+    background-color: $black-color;
+    .about-content {
+        @include tablet {
+            margin-top: 50px;
+        }
+        @include all-phone {
+            margin-top: 40px;
+        }
+    }
+    ul.about-list {
+        margin-top: 20px;
+        li {
+            color: $heading-color;
+            position: relative;
+            padding-left: 30px;
+            margin: 10px 0;
+            font-size: 20px;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                background-image: url('../images/about-list-icon.png');
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.section-top-2 {
+    span.title-tag {
+        display: inline-block;
+        color: $primary-color;
+        text-transform: capitalize;
+        padding: 3px 10px;
+        border: 1px solid $primary-color;
+        border-radius: 30px;
+        margin-bottom: 30px;
+    }
+    h2 {
+        color: $heading-color-home-2;
+        span {
+            color: $white-color;
+        }
+    }
+}
