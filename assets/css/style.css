@@ -1037,6 +1037,34 @@ nav {
     transform: translateX(-50%);
     cursor: pointer; }
 
+.marquee-area .marque-primary-bg {
+  padding: 15px 0 10px;
+  background-color: #ffff00; }
+  .marquee-area .marque-primary-bg h4 {
+    color: #000000; }
+
+.marquee-area .marque-black-bg {
+  padding: 15px 0 10px;
+  background-color: #000000; }
+  .marquee-area .marque-black-bg h4 {
+    color: #ffff00; }
+    .marquee-area .marque-black-bg h4 span::before {
+      background-image: url("../images/marquee-vector-02.png"); }
+
+.marquee-area h4 span {
+  display: inline-block;
+  margin: 0 40px;
+  position: relative; }
+  .marquee-area h4 span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/marquee-vector.png");
+    background-repeat: no-repeat; }
+
 .counter-area {
   background-color: #141414;
   position: relative;

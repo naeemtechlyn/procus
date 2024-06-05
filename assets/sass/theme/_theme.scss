@@ -152,6 +152,45 @@
     }
 }
 
+.marquee-area {
+    .marque-primary-bg {
+        padding: 15px 0 10px;
+        background-color: $primary-color;
+        h4 {
+            color: $black-color;
+        }
+    }
+    .marque-black-bg {
+        padding: 15px 0 10px;
+        background-color: $black-color;
+        h4 {
+            color: $primary-color;
+            span {
+                &::before {
+                    background-image: url('../images/marquee-vector-02.png');
+                }
+            }
+        }
+    }
+    h4 {
+        span {
+            display: inline-block;
+            margin: 0 40px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -40px;
+                width: 40px;
+                height: 40px;
+                background-image: url('../images/marquee-vector.png');
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
 .counter-area {
     background-color: $secondary-color;
     position: relative;   
