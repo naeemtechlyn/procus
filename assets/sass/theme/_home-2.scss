@@ -4,11 +4,13 @@
     position: relative;
     text-align: center;
     overflow: hidden;
+    z-index: 1;
     img.hero-3d-home-2 {
         width: auto;
         position: absolute;
         bottom: 0;
         left: 10%;
+        z-index: -1;
         @include tablet {
             display: none;
         }
@@ -85,6 +87,7 @@
                 font-weight: 500;
                 text-transform: capitalize;
                 transition: $transition;
+                border-radius: 3px;
                 &:hover {
                     color: $secondary-color;
                     background-color: $primary-color;
@@ -99,7 +102,7 @@
     background-color: $black-color;
     .marque-bg {
         h4 {
-            color: $heading-color-home-2;
+            color: $home-2-text-color;
             font-size: 68px;
             font-weight: 700;
             @include all-phone {
@@ -129,7 +132,7 @@
     }
 }
 
-.about-area {
+.about-home-2 {
     background-color: $black-color;
     .about-content {
         @include tablet {
@@ -172,8 +175,102 @@
         margin-bottom: 30px;
     }
     h2 {
-        color: $heading-color-home-2;
+        color: $home-2-text-color;
         span {
+            color: $white-color;
+        }
+    }
+}
+
+.counter-home-2 {
+    background-color: $black-color;
+}
+
+.counter-single-2 {
+    height: auto;
+    border: 1px solid $border-color;
+    border-radius: 20px;
+    padding: 30px 0;
+    &:hover {
+        background-color: rgba($primary-color, .1);
+        border: 1px solid $primary-color;
+        span.counter,
+        span.plus-sign {
+            color: $primary-color;
+            -webkit-text-fill-color: $primary-color;
+            -webkit-text-stroke-width: 0px;
+        }
+        h6 {
+            color: $primary-color;
+        }
+    }
+    .counter-number {
+        padding-top: 0;
+    }
+}
+
+.service-home-2 {
+    background-color: $secondary-color;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    span.big-title {
+        color: $white-color;
+        font-size: 320px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 320px;
+        opacity: .05;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+.single-service-2 {
+    padding: 60px 16%;
+    position: relative;
+    background-color: transparent;
+    border-bottom: 1px solid $border-color;
+    transition: $transition;
+    h2 {
+        a {
+            color: $home-2-text-color;
+            text-transform: uppercase;
+            transition: $transition;
+        }
+    }
+    .service-image {
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) scale(.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: $transition;
+    }
+
+    p {
+        color: $home-2-text-color;
+    }
+    &.active {
+        border-bottom: 1px solid transparent;
+        background-color: $black-color;
+        top: -1px;
+        h2 {
+            a {
+                color: $white-color;
+            }
+        }
+        .service-image {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(-50%) scale(1);
+        }
+        p {
             color: $white-color;
         }
     }

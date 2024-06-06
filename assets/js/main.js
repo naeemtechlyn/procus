@@ -133,13 +133,18 @@
             fixedContentPos: false
         });
 
-        // navbar home-2
+        // navbar home 02
         $('.nav-bar').on('click', function(){
             $('.main-menu').toggleClass('active');
         })
         $('.nav-bar').on('click', function(){
             $('.nav-bar').toggleClass('active');
         })
+
+        // service item 02
+        $('.single-service-2').hover(function(){
+            $(this).toggleClass('active');
+        });
 
     });
 
