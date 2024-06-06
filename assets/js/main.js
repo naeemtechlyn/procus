@@ -142,9 +142,12 @@
         })
 
         // service item 02
-        $('.single-service-2').hover(function(){
-            $(this).toggleClass('active');
+        $('.single-service-2').hover(function() {
+            $('.single-service-2').removeClass('active');  
+            $(this).addClass('active');  
         });
+        
+        $('.single-service-2:nth-child(4)').addClass('active');
 
     });
 

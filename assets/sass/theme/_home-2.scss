@@ -30,9 +30,11 @@
             border-radius: 30px;
             display: inline-block;
             margin-bottom: 20px;
+            animation: 1.5s fadeInUp;
         }
     }
     h1 {
+        animation: 1.5s fadeInUp;
         span {
             color: $primary-color;
         }
@@ -40,12 +42,14 @@
     p {
         max-width: 80%;
         margin: 20px auto 30px;
+        animation: 1.5s fadeInDown;
     }
     .hero-btn-group-2 {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 20px;
+        animation: 1.5s fadeInDown;
         .hero-video-wrapper a {
             color: $primary-color;
             font-size: 18px;
@@ -75,6 +79,7 @@
         display: inline-block;
         margin-top: 80px;
         padding: 15px 24px;
+        animation: 2.5s fadeInRight;
         li {
             display: inline;
             margin: 0 15px;
@@ -187,10 +192,17 @@
 }
 
 .counter-single-2 {
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+    margin: 0 auto 30px;
+    max-width: 230px;
+    transition: $transition;
     height: auto;
     border: 1px solid $border-color;
     border-radius: 20px;
     padding: 30px 0;
+    line-height: 0;
     &:hover {
         background-color: rgba($primary-color, .1);
         border: 1px solid $primary-color;
@@ -204,8 +216,21 @@
             color: $primary-color;
         }
     }
-    .counter-number {
-        padding-top: 0;
+    span.counter,
+    span.plus-sign {
+        color: $white-color;
+        font-size: 72px;
+        line-height: 72px;
+        font-weight: 700;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        transition: $transition;
+        @include desktop {
+            font-size: 60px;
+        }
+    }
+    h6.counter-text {
+        transition: $transition;
     }
 }
 
@@ -214,19 +239,20 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
-    span.big-title {
-        color: $white-color;
-        font-size: 320px;
-        font-weight: 700;
-        text-transform: uppercase;
-        line-height: 320px;
-        opacity: .05;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
+}
+
+span.big-title {
+    color: $white-color;
+    font-size: 320px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 320px;
+    opacity: .05;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 
 .single-service-2 {
@@ -235,6 +261,22 @@
     background-color: transparent;
     border-bottom: 1px solid $border-color;
     transition: $transition;
+    @include screen-1400 {
+        padding: 60px 6%;
+    }
+    @include screen-1200 {
+        padding: 60px 5%;
+    }
+    @include desktop {
+        padding: 60px 5%;
+    }
+    @include tablet {
+        padding: 40px 6%;
+    }
+    @include all-phone {
+        padding: 40px 6%;
+    }
+
     h2 {
         a {
             color: $home-2-text-color;
@@ -251,11 +293,39 @@
         opacity: 0;
         visibility: hidden;
         transition: $transition;
+        @include desktop {
+            max-width: 300px;
+        }
+        @include tablet {
+            position: inherit;
+            top: 0;
+            left: 0;
+            transform: translate(0) scale(.5)!important;
+            display: none;
+            max-width: 400px;
+            margin: 30px 0 10px;
+        }
+        @include all-phone {
+            position: inherit;
+            top: 0;
+            left: 0;
+            transform: translate(0) scale(.5)!important;
+            display: none;
+            max-width: 400px;
+            margin: 30px 0 10px;
+        }
     }
 
     p {
         color: $home-2-text-color;
+        @include tablet {
+            margin-top: 20px;
+        }
+        @include all-phone {
+            margin-top: 20px;
+        }
     }
+
     &.active {
         border-bottom: 1px solid transparent;
         background-color: $black-color;
@@ -269,9 +339,60 @@
             opacity: 1;
             visibility: visible;
             transform: translateX(-50%) translateY(-50%) scale(1);
+            @include tablet {
+                transform: translate(0) scale(1)!important;
+                display: block;
+            }
+            @include all-phone {
+                transform: translate(0) scale(1)!important;
+                display: block;
+            }
         }
         p {
             color: $white-color;
+        }
+    }
+}
+
+.choose-home-2 {
+    background-color: $black-color;
+    .choose-content {
+        @include tablet {
+            margin-top: 50px;
+        }
+        @include all-phone {
+            margin-top: 40px;
+        }
+    }
+}
+
+.brand-home-2 {
+    background-color: $secondary-color;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.brand-items {
+    .brand-single-2 {
+        margin: 0 14px 30px;
+        float: left;
+        overflow: hidden;
+        &:hover {
+            .brand-logo {
+                border: 1px solid $primary-color;
+            }
+        }
+    }
+    .brand-logo {
+        width: 230px;
+        height: 230px;
+        border: 1px solid $border-color;
+        transition: $transition;
+        img {
+            width: auto;
+            margin: auto;
+            padding-top: 90px;
         }
     }
 }
