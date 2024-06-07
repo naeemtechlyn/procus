@@ -149,6 +149,63 @@
         
         $('.single-service-2:nth-child(4)').addClass('active');
 
+        // portfolio slider 02
+        $('.portfolio-slider-2').slick({
+            dots: false,
+            infinite: true,
+            speed: 1000,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            centerMode: true,
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            ]
+        });
+
+        // case filter tab
+        var $caseItems = $('.case-items .case-single');
+        var $filterTabs = $('.case-filter-tab li');
+
+        $filterTabs.on('click', function() {
+            var $this = $(this); // Cache the current 'li' element
+            var filter = $this.attr('data-filter');
+
+            $this.addClass('active').siblings().removeClass('active');
+
+            if (filter === 'all') {
+                $caseItems.removeClass('item-hidden');
+            } else {
+                $caseItems.each(function() {
+                    var $caseItem = $(this); // Cache the current case item
+                    $caseItem.toggleClass('item-hidden', !$caseItem.hasClass(filter));
+                });
+            }
+        });
+
     });
 
     $(window).on('scroll', function () {
