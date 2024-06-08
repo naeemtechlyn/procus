@@ -128,3 +128,76 @@
         }
     }
 }
+
+.footer-home-2 {
+    background: $secondary-color;
+    h6 {
+        color: $white-color;
+        margin: 30px 0 10px;
+    }
+
+    .hero-social-2 {
+        animation: 0s;
+    }
+}
+
+.subscribe-form {
+    margin-top: 20px;
+    input {
+        color: $white-color;
+        background-color: transparent;
+        padding: 15px 0;
+        border: transparent;
+        border-bottom: 1px solid $border-color;
+        margin-right: 40px;
+    }
+    .primary-btn {
+        position: relative;
+        top: 7px;
+        @include portrait-phone {
+            margin-top: 20px;
+        }
+    }
+}
+
+.footer-widget-box-2.contact-widget {
+    @include tablet {
+        margin-top: 80px;
+    }
+    @include all-phone {
+        margin-top: 80px;
+    }
+    h2 {
+        color: $white-color;
+    }
+    ul {
+        margin-top: 30px;
+        li {
+            margin: 10px 0;
+            a {
+                color: $white-color;
+                transition: $transition;
+                font-size: 24px;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.copyright-2 {
+    background: $secondary-color;
+    .copyright-content {
+        padding: 30px 0 115px;
+        border-top: 1px solid $border-color;
+        .copyright-text {
+            color: $white-color;
+            margin-bottom: 0px;
+            text-transform: capitalize;
+            a {
+                color: $primary-color;
+            }
+        }
+    }
+}
