@@ -23,6 +23,7 @@ TABLE OF CONTENTS:
 >> spacing
 >> theme
 >> home-02
+>> home-03
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 /* author css */
@@ -36,11 +37,11 @@ body {
 
 h1 {
   color: #ffffff;
-  font-size: 68px;
+  font-size: 60px;
   font-weight: 700; }
   @media (max-width: 767.98px) {
     h1 {
-      font-size: 60px; } }
+      font-size: 54px; } }
 
 h2 {
   color: #B0B0B0;
@@ -2487,3 +2488,210 @@ span.big-title {
   display: inline-block; }
   .blog-single-slide-2 .blog-btn:hover {
     color: #ffff00; }
+
+/* home-03 */
+.hero-home-3 {
+  position: relative;
+  background-image: url("../images/hero-bg-home-3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .hero-home-3 {
+      padding: 100px 0; } }
+  @media (max-width: 767.98px) {
+    .hero-home-3 {
+      padding: 100px 0; } }
+  .hero-home-3 .vector-image {
+    width: auto;
+    position: absolute; }
+    .hero-home-3 .vector-image.vector-1 {
+      top: 9%;
+      left: 11%; }
+      @media (min-width: 1400px) and (max-width: 1919.98px) {
+        .hero-home-3 .vector-image.vector-1 {
+          top: 5%; } }
+      @media (min-width: 1200px) and (max-width: 1399.98px) {
+        .hero-home-3 .vector-image.vector-1 {
+          top: 5%; } }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .hero-home-3 .vector-image.vector-1 {
+          top: 5%; } }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .hero-home-3 .vector-image.vector-1 {
+          display: none; } }
+      @media (max-width: 767.98px) {
+        .hero-home-3 .vector-image.vector-1 {
+          display: none; } }
+    .hero-home-3 .vector-image.vector-2 {
+      top: 20%;
+      right: 7%; }
+      @media (min-width: 1400px) and (max-width: 1919.98px) {
+        .hero-home-3 .vector-image.vector-2 {
+          top: 5%; } }
+      @media (min-width: 1200px) and (max-width: 1399.98px) {
+        .hero-home-3 .vector-image.vector-2 {
+          top: 5%; } }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .hero-home-3 .vector-image.vector-2 {
+          top: 5%; } }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .hero-home-3 .vector-image.vector-2 {
+          display: none; } }
+      @media (max-width: 767.98px) {
+        .hero-home-3 .vector-image.vector-2 {
+          display: none; } }
+    .hero-home-3 .vector-image.vector-3 {
+      bottom: 22%;
+      left: 5%;
+      opacity: .1; }
+      @media (min-width: 1400px) and (max-width: 1919.98px) {
+        .hero-home-3 .vector-image.vector-3 {
+          bottom: 4%; } }
+      @media (min-width: 1200px) and (max-width: 1399.98px) {
+        .hero-home-3 .vector-image.vector-3 {
+          bottom: 4%; } }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .hero-home-3 .vector-image.vector-3 {
+          bottom: 4%; } }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .hero-home-3 .vector-image.vector-3 {
+          display: none; } }
+      @media (max-width: 767.98px) {
+        .hero-home-3 .vector-image.vector-3 {
+          display: none; } }
+  .hero-home-3 .button-group {
+    -webkit-animation: 1.5s fadeInUp;
+    animation: 1.5s fadeInUp;
+    position: relative; }
+    .hero-home-3 .button-group .vector-4 {
+      width: auto;
+      position: absolute;
+      top: 10px;
+      left: 200px; }
+  .hero-home-3 h1 {
+    -webkit-animation: 1.5s fadeInUp;
+    animation: 1.5s fadeInUp; }
+    .hero-home-3 h1 span {
+      color: #ffff00; }
+  .hero-home-3 p {
+    -webkit-animation: 1.5s fadeInUp;
+    animation: 1.5s fadeInUp; }
+  .hero-home-3 .hero-image-left {
+    -webkit-animation: 1.5s fadeInDown;
+    animation: 1.5s fadeInDown; }
+  .hero-home-3 .hero-image-right {
+    -webkit-animation: 1.5s fadeInRight;
+    animation: 1.5s fadeInRight; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .hero-home-3 .hero-image-right {
+        margin-top: 50px; } }
+    @media (max-width: 767.98px) {
+      .hero-home-3 .hero-image-right {
+        margin-top: 40px; } }
+
+.brand-home-3 {
+  background-color: #000000;
+  border-top: 1px solid #ffff00;
+  border-bottom: 1px solid #ffff00;
+  padding: 80px 0;
+  position: relative;
+  z-index: 1; }
+  .brand-home-3::before {
+    content: '';
+    position: absolute;
+    top: -.5%;
+    left: 0;
+    width: 400px;
+    height: 101%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#000000), to(transparent));
+    background-image: -webkit-linear-gradient(left, #000000, transparent);
+    background-image: -o-linear-gradient(left, #000000, transparent);
+    background-image: linear-gradient(to right, #000000, transparent);
+    z-index: 2; }
+    @media (max-width: 767.98px) {
+      .brand-home-3::before {
+        display: none; } }
+  .brand-home-3::after {
+    content: '';
+    position: absolute;
+    top: -.5%;
+    right: 0;
+    width: 400px;
+    height: 101%;
+    background-image: -webkit-gradient(linear, right top, left top, from(#000000), to(transparent));
+    background-image: -webkit-linear-gradient(right, #000000, transparent);
+    background-image: -o-linear-gradient(right, #000000, transparent);
+    background-image: linear-gradient(to left, #000000, transparent); }
+    @media (max-width: 767.98px) {
+      .brand-home-3::after {
+        display: none; } }
+  .brand-home-3 .brand-logo {
+    max-width: 230px; }
+    .brand-home-3 .brand-logo img {
+      width: auto;
+      margin: auto; }
+  .brand-home-3 .slick-slide {
+    margin: 0 15px; }
+
+.counter-home-3 {
+  background-color: #000000; }
+  .counter-home-3 .title-image img {
+    width: auto; }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .counter-home-3 .title-image img {
+        width: 120px; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .counter-home-3 .title-image {
+      margin-bottom: 30px; } }
+  @media (max-width: 767.98px) {
+    .counter-home-3 .title-image {
+      margin-bottom: 30px; } }
+
+.section-top-3 h2 {
+  color: #ffffff; }
+  .section-top-3 h2 span {
+    color: #6D6D6D; }
+
+.counter-single-3 {
+  margin-bottom: 30px;
+  width: 80%; }
+  .counter-single-3 .counter-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .counter-single-3 h2 {
+    color: #ffffff; }
+  .counter-single-3 h6 {
+    color: #ffffff; }
+  .counter-single-3 p {
+    color: #B0B0B0; }
+
+.video-home-3 {
+  background-color: #000000; }
+  .video-home-3 .video-bg {
+    background-image: url("../images/video-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 250px 0;
+    border-radius: 20px;
+    text-align: center; }
+  .video-home-3 .video-wrapper a .video-btn {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    line-height: 100px;
+    color: #ffff00;
+    border: 1px solid #ffff00;
+    background-color: rgba(255, 255, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding-left: 4px; }

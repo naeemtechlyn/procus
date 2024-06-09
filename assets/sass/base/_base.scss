@@ -10,10 +10,10 @@ body {
 
 h1 {
     color: $white-color;
-    font-size: 68px;
+    font-size: 60px;
     font-weight: 700;
     @include all-phone {
-        font-size: 60px;
+        font-size: 54px;
     }
 }
 

@@ -262,6 +262,54 @@
             ]
         });
 
+        // brand slider 03
+        $('.brand-slider-3').slick({
+            dots: false,
+            infinite: true,
+            speed: 800,
+            autoplay: true,
+            autoplaySpeed: 1200,
+            slidesToShow: 8,
+            slidesToScroll: 1,
+            arrows: false,
+            responsive: [{
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            ]
+        });
+
     });
 
     $(window).on('scroll', function () {
