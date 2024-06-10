@@ -223,3 +223,90 @@
         padding-left: 4px; 
     }
 }
+
+.service-home-3 {
+    background-color: $black-color;
+
+
+    .tab-menu {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tab-menu-item {
+        &.active {
+            span {
+                color: rgba($white-color, 1);
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+        span {
+            color: rgba($white-color, .5);
+            display: block;
+            font-size: 42px;
+            font-weight: 700;
+            text-transform: capitalize;
+            padding: 24px 0 24px 40px;
+            border-bottom: 1px solid $border-color;
+            cursor: pointer;
+            transition: $transition;
+            position: relative;
+            &:hover {
+                color: rgba($white-color, 1);
+                &::before {
+                    opacity: 1;
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 30px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('../images/service-icon-home-3.png');
+                background-repeat: no-repeat;
+                opacity: .5;
+                transition: $transition;
+            }
+        }
+    }
+
+    .tab-content {
+        img {
+            border-radius: 20px;
+        }
+    }
+    
+    .tab-content-item {
+        display: none;
+    }
+    
+    .tab-content-item.active {
+        display: block;
+    }
+}
+
+.portfolio-home-3 {
+    background-color: $black-color;
+}
+
+.single-portfolio-3 {
+    margin-bottom: 60px;
+    h3 {
+        a {
+            color: $white-color;
+            transition: $transition;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.testimonial-home-3 {
+    background-color: $black-color;
+}
+

@@ -310,6 +310,19 @@
             ]
         });
 
+        // service tab 03
+        $('.tab-menu-item').on('click', function() {
+            var tabId = $(this).data('tab');
+    
+            // Remove active class from all tab-menu-item and tab-content-item
+            $('.tab-menu-item').removeClass('active');
+            $('.tab-content-item').removeClass('active');
+    
+            // Add active class to the clicked tab-menu-item and corresponding tab-content-item
+            $(this).addClass('active');
+            $('#' + tabId).addClass('active');
+        });
+
     });
 
     $(window).on('scroll', function () {
