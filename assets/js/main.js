@@ -323,6 +323,87 @@
             $('#' + tabId).addClass('active');
         });
 
+        // testimonial slider 03
+        $('.testimonial-slider-home-3').slick({
+            dots: false,
+            infinite: true,
+            speed: 4000,
+            autoplay: true,
+            autoplaySpeed: 0,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            cssEase: 'linear',
+            arrows: false,
+            centerMode: true,
+            responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                }
+            },
+            ]
+        });
+        
+        $('.testimonial-slider-2-home-3').slick({
+            dots: false,
+            infinite: true,
+            speed: 3500,
+            autoplay: true,
+            autoplaySpeed: 0,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            cssEase: 'linear',
+            arrows: false,
+            centerMode: true,
+            responsive: [{
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                }
+            },
+            ]
+        });
+
+        // pricing toggle
+        $('.monthly-plans').show();
+        $('.yearly-plans').hide();
+
+        $('.pricing-toggle-btn').on('click', function() {
+            $('.pricing-toggle-btn').removeClass('active');
+            $(this).addClass('active');
+            
+            var pricingType = $(this).data('pricing');
+            if (pricingType === 'monthly') {
+                $('.monthly-plans').show();
+                $('.yearly-plans').hide();
+            } else if (pricingType === 'yearly') {
+                $('.monthly-plans').hide();
+                $('.yearly-plans').show();
+            }
+        });
+
     });
 
     $(window).on('scroll', function () {
