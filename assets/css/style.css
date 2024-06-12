@@ -471,6 +471,61 @@ nav {
       .copyright-2 .copyright-content .copyright-text a {
         color: #ffff00; }
 
+.footer-home-3 {
+  background-color: #141414; }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer-widget-box-3.about-us {
+    margin-bottom: 30px; } }
+
+@media (max-width: 767.98px) {
+  .footer-widget-box-3.about-us {
+    margin-bottom: 30px; } }
+
+.footer-widget-box-3.about-us h1 {
+  font-weight: 500; }
+
+.footer-widget-box-3.about-us .footer-social-3 {
+  margin-top: 40px; }
+  .footer-widget-box-3.about-us .footer-social-3 li {
+    display: inline-block;
+    margin: 0 5px 15px 0; }
+    .footer-widget-box-3.about-us .footer-social-3 li a {
+      color: #ffffff;
+      font-size: 20px;
+      text-transform: capitalize;
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
+      .footer-widget-box-3.about-us .footer-social-3 li a:hover {
+        color: #ffff00;
+        border: 1px solid #ffff00; }
+
+.footer-info-area .info-content {
+  padding: 20px 40px;
+  border: 1px solid #4F4F4F;
+  border-radius: 20px; }
+  .footer-info-area .info-content img {
+    width: auto; }
+  .footer-info-area .info-content span {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .footer-info-area .info-content span {
+        margin-top: 30px; } }
+    @media (max-width: 767.98px) {
+      .footer-info-area .info-content span {
+        margin-top: 30px; } }
+
+.copyright-3 .copyright-content {
+  padding: 80px 0 115px;
+  border-top: 1px solid transparent; }
+
 /* breadcrumb */
 /* accordion */
 .accordion-list li {
@@ -2390,7 +2445,8 @@ span.big-title {
   padding: 30px 80px;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in; }
+  transition: all 0.2s ease-in;
+  overflow: hidden; }
   @media (min-width: 1200px) and (max-width: 1399.98px) {
     .testimonial-slide-2 {
       padding: 30px 40px; } }
@@ -2990,3 +3046,64 @@ span.big-title {
 
 .blog-home-3 {
   background-color: #000000; }
+
+.contact-home-3 {
+  background-color: #000000; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .contact-home-3 .section-top-3 {
+      margin-bottom: 20px; } }
+  @media (max-width: 767.98px) {
+    .contact-home-3 .section-top-3 {
+      margin-bottom: 20px; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .contact-home-3 .contact-form {
+      margin-top: 40px; } }
+  @media (max-width: 767.98px) {
+    .contact-home-3 .contact-form {
+      margin-top: 40px; } }
+  .contact-home-3 .contact-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .contact-home-3 .contact-form .form-group {
+    margin-bottom: 20px; }
+  .contact-home-3 .contact-form label {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block; }
+  .contact-home-3 .contact-form input,
+  .contact-home-3 .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #4F4F4F;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px; }
+  .contact-home-3 .contact-form input::-webkit-input-placeholder,
+  .contact-home-3 .contact-form textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5); }
+  .contact-home-3 .contact-form input:-ms-input-placeholder,
+  .contact-home-3 .contact-form textarea:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5); }
+  .contact-home-3 .contact-form input::-ms-input-placeholder,
+  .contact-home-3 .contact-form textarea::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5); }
+  .contact-home-3 .contact-form input::placeholder,
+  .contact-home-3 .contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5); }
+  .contact-home-3 .contact-form button.primary-btn {
+    max-width: 300px;
+    margin-top: 20px; }
+  .contact-home-3 .contact-form .primary-btn i {
+    margin-left: 10px; }
+
+.marquee-home-3 {
+  padding-bottom: 60px; }

@@ -558,3 +558,71 @@
 .blog-home-3 {
     background-color: $black-color;
 }
+
+.contact-home-3 {
+    background-color: $black-color;
+    .section-top-3 {
+        @include tablet {
+            margin-bottom: 20px;
+        }
+        @include all-phone {
+            margin-bottom: 20px;
+        }
+    }
+
+    .contact-form {
+        @include tablet {
+            margin-top: 40px;
+        }
+        @include all-phone {
+            margin-top: 40px;
+        }
+    }
+    
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-form .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .contact-form label {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        display: block;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $border-color;
+        color: #ffffff;
+        font-size: 16px;
+        outline: none;
+        margin-bottom: 10px;
+    }
+    
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+        color: rgba($white-color, .5);
+    }
+
+    .contact-form button.primary-btn {
+        max-width: 300px;
+        margin-top: 20px;
+    }
+    
+    .contact-form .primary-btn i {
+        margin-left: 10px;
+    }    
+}
+
+.marquee-home-3 {
+    padding-bottom: 60px;
+}

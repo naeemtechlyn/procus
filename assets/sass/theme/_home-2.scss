@@ -678,6 +678,8 @@ span.big-title {
     border-radius: 20px;
     padding: 30px 80px;
     transition: $transition;
+    overflow: hidden;
+
     @include screen-1200 {
         padding: 30px 40px;
     }
