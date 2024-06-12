@@ -43,7 +43,6 @@
             }
         }
         h1 {
-            animation: 1.5s fadeInLeft;
             span.gradient-bg {
                 background-image: linear-gradient(to right, #353501 15%, $secondary-color 50%);
                 padding: 0 10px;
@@ -52,9 +51,6 @@
         }
     }
     .hero-bottom-content {
-        h1 {
-            animation: 1.5s fadeInRight;
-        }
         img.vector-shape {
             width: 110%;
             margin-top: 30px;
@@ -68,7 +64,6 @@
         }
         p,
         .btn-group {
-            animation: 1.5s fadeInUp;
             img {
                 @include all-phone {
                     margin: 20px 0;
@@ -343,14 +338,14 @@
         }
     }
     .brand-logo {
-        width: 230px;
-        height: 230px;
+        width: 220px;
+        height: 220px;
         border: 1px solid $white-color;
         border-radius: 50%;
         img {
             width: auto;
             margin: auto;
-            padding-top: 90px;
+            padding-top: 85px;
         }
     }
     .slick-current {
@@ -588,7 +583,7 @@
         }
     }
     .slick-slide {
-        margin: 0 50px 0 0;
+        margin: 0 20px;
         @include tablet {
             padding-left: 20px;
         }
@@ -596,12 +591,10 @@
             padding-left: 20px;
         }
     }
-    .blog-slider {
-        margin-left: -50px;
-    }
 }
 
 .blog-single-slide {
+    max-width: 680px;
     .blog-image {
         img {
             border-radius: 20px;
@@ -685,11 +678,31 @@
         color: $white-color;
         font-size: 120px;
         border-bottom: 5px solid $white-color;
+        position: relative;
+        padding-right: 90px;
+        transition: $transition;
+        &:hover {
+            color: $primary-color;
+        }
+        span {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 100px;
+            position: absolute;
+            top: 8px;
+            transform: rotate(-45deg)
+        }
         @include tablet {
             font-size: 72px;
+            span {
+                font-size: 60px;
+            }
         }
         @include all-phone {
             font-size: 48px;
+            span {
+                font-size: 42px;
+            }
         }
     }
 }

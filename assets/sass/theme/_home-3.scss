@@ -75,7 +75,6 @@
         }
     }
     .button-group {
-        animation: 1.5s fadeInUp;
         position: relative;
         .vector-4 {
             width: auto;
@@ -85,19 +84,11 @@
         }
     }
     h1 {
-        animation: 1.5s fadeInUp;
         span {
             color: $primary-color;
         }
     }
-    p {
-        animation: 1.5s fadeInUp;
-    }
-    .hero-image-left {
-        animation: 1.5s fadeInDown;
-    }
     .hero-image-right {
-        animation: 1.5s fadeInRight;
         @include tablet {
             margin-top: 50px;
         }

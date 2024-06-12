@@ -30,11 +30,9 @@
             border-radius: 30px;
             display: inline-block;
             margin-bottom: 20px;
-            animation: 1.5s fadeInUp;
         }
     }
     h1 {
-        animation: 1.5s fadeInUp;
         span {
             color: $primary-color;
         }
@@ -42,14 +40,12 @@
     p {
         max-width: 80%;
         margin: 20px auto 30px;
-        animation: 1.5s fadeInDown;
     }
     .hero-btn-group-2 {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        animation: 1.5s fadeInDown;
         .hero-video-wrapper a {
             color: $primary-color;
             font-size: 18px;
@@ -81,7 +77,6 @@
     display: inline-block;
     margin-top: 80px;
     padding: 12px 24px;
-    animation: 2.5s fadeInRight;
     li {
         display: inline;
         margin: 0 10px;

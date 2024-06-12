@@ -6,11 +6,20 @@
     text-transform: capitalize;
     text-align: center;
     display: inline-block;
-    padding: 12px 28px;
+    padding: 12px 47px 12px 28px;
     background-color: $primary-color;
     transition: $transition;
     border-radius: 30px;
     border: 1px solid transparent;
+    position: relative;
+
+    span {
+        position: absolute;
+        transform: rotate(-45deg);
+        font-size: 20px;
+        margin-top: -1px;
+        margin-left: 3px;
+    }
 
     @include desktop {
         padding: 12px 24px;
