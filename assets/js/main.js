@@ -111,6 +111,7 @@
                     dots: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    centerMode: false,
                 }
             },
             ]
@@ -402,6 +403,13 @@
                 $('.monthly-plans').hide();
                 $('.yearly-plans').show();
             }
+        });
+
+        // mouseover   
+        var singleChoose = $('.single-choose-item')
+        singleChoose.mouseover(function() {
+            singleChoose.removeClass('active');
+            $(this).addClass('active');
         });
 
     });

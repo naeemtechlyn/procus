@@ -194,7 +194,7 @@
         }
     }
     .counter-number {
-        padding-top: 60px;
+        padding-top: 62px;
     }
     span.counter,
     span.plus-sign {
@@ -694,15 +694,89 @@
         }
         @include tablet {
             font-size: 72px;
+            padding-right: 64px;
             span {
                 font-size: 60px;
             }
         }
         @include all-phone {
             font-size: 48px;
+            padding-right: 45px;
             span {
                 font-size: 42px;
+                top: 5px;
             }
+        }
+    }
+}
+
+.welcome-section-about {
+    background-color: $secondary-color;
+    .welcome-images {
+        position: relative;
+        @include tablet {
+            margin-top: 90px;
+        }
+        @include all-phone {
+            margin-top: 90px;
+        }
+        img.welcome-vector {
+            width: 120px;
+            position: absolute;
+            top: -65px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        img.welcome-image {
+            border-radius: 20px;
+        }
+    }
+}
+
+.video-home-3.video-about-page {
+    background-color: $secondary-color;
+    .video-bg {
+        background-image: url('../images/video-bg-about-page.png');
+        padding: 200px 0;
+        border-radius: 30px;
+    }
+}
+
+.choose-section-about {
+    background-color: $black-color; 
+}
+
+.single-choose-item {
+    padding: 40px 30px;
+    text-align: center;
+    border: 1px solid $border-color;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    transition: $transition;
+    img {
+        width: auto;
+        margin: 0 auto 20px;
+        transition: $transition;
+        opacity: .5;
+    }
+    h4 {
+        transition: $transition;
+        opacity: .5;
+    }
+    p {
+        transition: $transition;
+        opacity: .5;
+    }
+    &.active {
+        border: 1px solid $primary-color;
+        img {
+            opacity: 1;
+        }
+        h4 {
+            opacity: 1;
+        }
+        p {
+            opacity: 1;
         }
     }
 }
