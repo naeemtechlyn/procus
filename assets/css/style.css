@@ -2041,6 +2041,61 @@ nav {
     .single-choose-item.active p {
       opacity: 1; }
 
+.working-process-services {
+  background-color: #141414; }
+  .working-process-services .slick-slide {
+    padding: 40px 30px;
+    border: 1px solid #4F4F4F;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin: 15px 0; }
+  .working-process-services .slick-current {
+    border: 1px solid #ffff00; }
+    .working-process-services .slick-current h3 {
+      color: #ffffff; }
+    .working-process-services .slick-current p {
+      opacity: 1; }
+  .working-process-services .slick-dots {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: -50px;
+    border: 1px solid #4F4F4F;
+    border-radius: 20px; }
+  .working-process-services .slick-dots li {
+    margin: 30px 0; }
+  .working-process-services .slick-dots button {
+    color: transparent;
+    background-color: #ffff00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 0;
+    border: none;
+    opacity: 0;
+    visibility: hidden; }
+  .working-process-services .slick-dots .slick-active button {
+    opacity: 1;
+    visibility: visible; }
+
+.working-process-single-slide h3 {
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+.working-process-single-slide p {
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  opacity: .5; }
+
 /* home-02 */
 .hero-home-2 {
   background-image: url("../images/hero-bg-home-2.png");

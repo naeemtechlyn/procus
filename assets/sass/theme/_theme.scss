@@ -780,3 +780,65 @@
         }
     }
 }
+
+.working-process-services {
+    background-color: $secondary-color;
+
+    .slick-slide {
+        padding: 40px 30px;
+        border: 1px solid $border-color;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        transition: $transition;
+        margin: 15px 0;
+    }
+
+    .slick-current {
+        border: 1px solid $primary-color;
+        h3 {
+            color: $white-color;
+        }
+        p {
+            opacity: 1;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        top: 50%;
+        left: -50px;
+        transform: translateY(-50%);
+        margin-left: -50px;
+        border: 1px solid $border-color;
+        border-radius: 20px;
+    }
+    .slick-dots li {
+        margin: 30px 0;
+    }
+    .slick-dots button {
+        color: transparent;
+        background-color: $primary-color;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        line-height: 0;
+        border: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .slick-dots .slick-active button {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.working-process-single-slide {
+    h3 {
+        transition: $transition;
+    }
+    p {
+        transition: $transition;
+        opacity: .5;
+    }
+}

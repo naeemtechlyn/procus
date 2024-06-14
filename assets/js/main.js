@@ -412,6 +412,36 @@
             $(this).addClass('active');
         });
 
+        // working process slider
+        $('.working-process-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 1000,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            vertical: true,
+            verticalSwiping: true,
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            ]
+        });
+
     });
 
     $(window).on('scroll', function () {
