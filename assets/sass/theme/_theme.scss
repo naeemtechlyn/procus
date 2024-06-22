@@ -422,10 +422,10 @@
         padding: 60px;
     }
     @include tablet {
-        padding: 50px;
+        padding: 40px;
     }
     @include all-phone {
-        padding: 40px;
+        padding: 30px;
     }
 
     span.testimonial-quote-icon {
@@ -437,6 +437,9 @@
     span.quote-text {
         font-size: 30px;
         font-weight: 500;
+        @include all-phone {
+            font-size: 24px;
+        }
     }
 
     .testimonial-content {
@@ -861,7 +864,13 @@
         width: fit-content;
         margin-top: 50px;
         li {
-            display: inline;
+            display: inline-block;
+            @include all-phone {
+                margin-left: 0!important;
+                margin-right: 10px;
+                margin-top: 7px;
+                margin-bottom: 7px;
+            }
             +li {
                 margin-left: 10px;
             }
@@ -884,8 +893,23 @@
     }
 
     .service-details-image-2 {
+        @include tablet {
+            margin-bottom: 30px;
+        }
+        @include all-phone {
+            margin-bottom: 30px;
+        }
         img {
             border-radius: 20px;
+        }
+    }
+
+    .service-sidebar {
+        @include tablet {
+            margin-top: 40px;
+        }
+        @include all-phone {
+            margin-top: 40px;
         }
     }
 
@@ -932,6 +956,68 @@
                     visibility: hidden;
                     transition: $transition;
                 }
+            }
+        }
+    }
+}
+
+.process-slider-area {
+    background-color: $black-color;
+    h2 {
+        color: $white-color;
+    }
+}
+
+.process-slider-part {
+    border-top: 1px solid $border-color;
+    .slick-slider {
+        margin: 0 -15px;
+    }
+    .slick-slide {
+        margin: 0 15px;
+    }
+
+    .process-slider-2 {
+        .single-slide {
+            padding: 30px 20px 20px;
+            border-radius: 20px;
+            background-color: $white-color;
+            position: relative;
+            transition: $transition;
+            img.shape-image {
+                width: auto;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: $transition;
+            } 
+            span.slide-number {
+                display: block;
+                color: $white-color;
+                background-color: $secondary-color;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 50px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                text-align: center;
+                margin-bottom: 20px;
+                transition: $transition;
+            }
+            h4 {
+                color: $secondary-color;
+                font-weight: 700;
+                transition: $transition;
+            }
+            p {
+                color: $secondary-color;
+                transition: $transition;
+                font-size: 15px;
+            }
+            &.active {
+                background-color: $primary-color;
             }
         }
     }

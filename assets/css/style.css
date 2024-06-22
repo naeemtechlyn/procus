@@ -1718,10 +1718,10 @@ nav {
       padding: 60px; } }
   @media (min-width: 768px) and (max-width: 991.98px) {
     .testimonial-slide {
-      padding: 50px; } }
+      padding: 40px; } }
   @media (max-width: 767.98px) {
     .testimonial-slide {
-      padding: 40px; } }
+      padding: 30px; } }
   .testimonial-slide span.testimonial-quote-icon {
     font-size: 80px;
     display: block;
@@ -1729,6 +1729,9 @@ nav {
   .testimonial-slide span.quote-text {
     font-size: 30px;
     font-weight: 500; }
+    @media (max-width: 767.98px) {
+      .testimonial-slide span.quote-text {
+        font-size: 24px; } }
   .testimonial-slide .testimonial-content {
     margin-top: 60px;
     display: -webkit-box;
@@ -2111,7 +2114,13 @@ nav {
     width: fit-content;
     margin-top: 50px; }
     .service-details-content .service-tags li {
-      display: inline; }
+      display: inline-block; }
+      @media (max-width: 767.98px) {
+        .service-details-content .service-tags li {
+          margin-left: 0 !important;
+          margin-right: 10px;
+          margin-top: 7px;
+          margin-bottom: 7px; } }
       .service-details-content .service-tags li + li {
         margin-left: 10px; }
       .service-details-content .service-tags li a {
@@ -2129,8 +2138,20 @@ nav {
           color: #141414;
           background-color: #ffff00;
           border: 1px solid transparent; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .service-details-content .service-details-image-2 {
+      margin-bottom: 30px; } }
+  @media (max-width: 767.98px) {
+    .service-details-content .service-details-image-2 {
+      margin-bottom: 30px; } }
   .service-details-content .service-details-image-2 img {
     border-radius: 20px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .service-details-content .service-sidebar {
+      margin-top: 40px; } }
+  @media (max-width: 767.98px) {
+    .service-details-content .service-sidebar {
+      margin-top: 40px; } }
   .service-details-content .service-widget {
     padding: 30px;
     border: 1px solid #4F4F4F;
@@ -2171,6 +2192,66 @@ nav {
         -webkit-transition: all 0.2s ease-in;
         -o-transition: all 0.2s ease-in;
         transition: all 0.2s ease-in; }
+
+.process-slider-area {
+  background-color: #000000; }
+  .process-slider-area h2 {
+    color: #ffffff; }
+
+.process-slider-part {
+  border-top: 1px solid #4F4F4F; }
+  .process-slider-part .slick-slider {
+    margin: 0 -15px; }
+  .process-slider-part .slick-slide {
+    margin: 0 15px; }
+  .process-slider-part .process-slider-2 .single-slide {
+    padding: 30px 20px 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
+    .process-slider-part .process-slider-2 .single-slide img.shape-image {
+      width: auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
+    .process-slider-part .process-slider-2 .single-slide span.slide-number {
+      display: block;
+      color: #ffffff;
+      background-color: #141414;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 50px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      margin-bottom: 20px;
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
+    .process-slider-part .process-slider-2 .single-slide h4 {
+      color: #141414;
+      font-weight: 700;
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
+    .process-slider-part .process-slider-2 .single-slide p {
+      color: #141414;
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+      font-size: 15px; }
+    .process-slider-part .process-slider-2 .single-slide.active {
+      background-color: #ffff00; }
 
 /* home-02 */
 .hero-home-2 {
