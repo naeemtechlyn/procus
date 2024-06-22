@@ -489,10 +489,12 @@
             visibility: visible;
         }
         img {
+            filter: grayscale(0%);
             transform: rotate(2deg) scale(1.1);
         }
     }
     img {
+        filter: grayscale(100%);
         transition: $transition;
     }
     .hover-state {
