@@ -56,7 +56,7 @@ h2 {
 h3 {
   color: #B0B0B0;
   font-size: 36px;
-  font-weight: 700; }
+  font-weight: 600; }
   @media (max-width: 767.98px) {
     h3 {
       font-size: 30px; } }
@@ -2095,6 +2095,82 @@ nav {
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   opacity: .5; }
+
+.service-details-content {
+  background-color: #141414; }
+  .service-details-content .service-details-image img {
+    border-radius: 20px; }
+  .service-details-content h2, .service-details-content h3 {
+    color: #ffffff; }
+  .service-details-content .service-tags {
+    padding: 10px;
+    border: 1px solid #4F4F4F;
+    border-radius: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 50px; }
+    .service-details-content .service-tags li {
+      display: inline; }
+      .service-details-content .service-tags li + li {
+        margin-left: 10px; }
+      .service-details-content .service-tags li a {
+        display: inline-block;
+        color: #6D6D6D;
+        background-color: transparent;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        font-size: 20px;
+        padding: 5px 10px;
+        border: 1px solid #4F4F4F;
+        border-radius: 5px; }
+        .service-details-content .service-tags li a:hover {
+          color: #141414;
+          background-color: #ffff00;
+          border: 1px solid transparent; }
+  .service-details-content .service-details-image-2 img {
+    border-radius: 20px; }
+  .service-details-content .service-widget {
+    padding: 30px;
+    border: 1px solid #4F4F4F;
+    border-radius: 20px; }
+    .service-details-content .service-widget .widget-title {
+      margin-bottom: 20px; }
+    .service-details-content .service-widget .service-items li {
+      position: relative; }
+      .service-details-content .service-widget .service-items li:hover a {
+        color: #141414;
+        background-color: #ffff00;
+        border: 1px solid transparent; }
+      .service-details-content .service-widget .service-items li:hover span {
+        opacity: 1;
+        visibility: visible; }
+      .service-details-content .service-widget .service-items li + li {
+        margin-top: 20px; }
+      .service-details-content .service-widget .service-items li a {
+        color: #ffffff;
+        padding: 12px 15px;
+        border: 1px solid #4F4F4F;
+        border-radius: 8px;
+        background-color: transparent;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        display: block; }
+      .service-details-content .service-widget .service-items li span {
+        color: #141414;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
 
 /* home-02 */
 .hero-home-2 {

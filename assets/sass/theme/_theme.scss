@@ -842,3 +842,97 @@
         opacity: .5;
     }
 }
+
+.service-details-content {
+    background-color: $secondary-color;
+    .service-details-image {
+        img {
+            border-radius: 20px;
+        }
+    }
+    h2, h3 {
+        color: $white-color;
+    }
+
+    .service-tags {
+        padding: 10px;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        width: fit-content;
+        margin-top: 50px;
+        li {
+            display: inline;
+            +li {
+                margin-left: 10px;
+            }
+            a {
+                display: inline-block;
+                color: $home-2-text-color;
+                background-color: transparent;
+                transition: $transition;
+                font-size: 20px;
+                padding: 5px 10px;
+                border: 1px solid $border-color;
+                border-radius: 5px;
+                &:hover {
+                    color: $secondary-color;
+                    background-color: $primary-color;
+                    border: 1px solid transparent;
+                }
+            }
+        }
+    }
+
+    .service-details-image-2 {
+        img {
+            border-radius: 20px;
+        }
+    }
+
+    .service-widget {
+        padding: 30px;
+        border: 1px solid $border-color;
+        border-radius: 20px;
+        .widget-title {
+            margin-bottom: 20px;
+        }
+        .service-items {
+            li {
+                position: relative;
+                &:hover {
+                    a {
+                        color: $secondary-color;
+                        background-color: $primary-color;
+                        border: 1px solid transparent;
+                    }
+                    span {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                +li {
+                    margin-top: 20px;
+                }
+                a {
+                    color: $white-color;
+                    padding: 12px 15px;
+                    border: 1px solid $border-color;
+                    border-radius: 8px;
+                    background-color: transparent;
+                    transition: $transition;
+                    display: block;
+                }
+                span {
+                    color: $secondary-color;
+                    position: absolute;
+                    top: 50%;
+                    right: 15px;
+                    transform: translateY(-50%);
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: $transition;
+                }
+            }
+        }
+    }
+}
