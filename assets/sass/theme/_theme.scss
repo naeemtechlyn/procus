@@ -1024,3 +1024,165 @@
         }
     }
 }
+
+.team-member-info {
+    background-color: $black-color;
+    h2 {
+        color: $white-color;
+    }
+    .member-info-box {
+        padding: 30px;
+        border: 1px solid $primary-color;
+        border-radius: 20px;
+        @include portrait-phone {
+            padding: 15px;
+        }
+    }
+    .member-image {
+        @include tablet {
+            margin-bottom: 40px;
+        }
+        @include all-phone {
+            margin-bottom: 40px;
+        }
+        img {
+            border-radius: 20px;
+        }
+    }
+    .member-content {
+        h2 {
+            font-weight: 500;
+        }
+    }
+    .single-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+        &:hover {
+            .info-icon {
+                span {
+                    color: $primary-color;
+                    border: 1px solid rgba($primary-color, .5);
+                }
+            }
+        }
+        .info-icon {
+            span {
+                color: $home-2-text-color;
+                border: 1px solid $border-color;
+                border-radius: 5px;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                transition: $transition;
+            }
+        }
+        h5 {
+            color: $white-color;
+        }
+    }
+    .member-social {
+        h5 {
+            color: $white-color;
+        }
+        ul {
+            li {
+                display: inline;
+                margin-right: 20px;
+                a {
+                    color: $white-color;
+                    font-size: 24px;
+                    transition: $transition;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.experience-education-area {
+    background-color: $secondary-color;
+    h2 {
+        color: $white-color;
+        span {
+            font-size: 36px;
+            position: relative;
+            top: -5px;
+        }
+    }
+    .education-part {
+        @include tablet {
+            margin-top: 60px;
+        }
+        @include all-phone {
+            margin-top: 60px;
+        }
+    }
+    .single-item {
+        padding: 40px;
+        border-left: 1px solid $border-color;
+        +.single-item {
+            border-top: 1px solid $border-color;
+        }
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            padding-bottom: 0;
+        }
+        span.item-date {
+            color: $primary-color;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -45px;
+                width: 10px;
+                height: 10px;
+                background-color: $primary-color;
+                border-radius: 50%;
+                box-shadow: 0 0 4px 2px rgba($primary-color, 0.5);
+            }
+        }
+        span, p {
+            color: $heading-color;
+        }
+        p {
+            margin-top: 10px;
+        }
+    }
+}
+
+.skills-tools-area {
+    background-color: $black-color;
+    h2 {
+        color: $white-color;
+    }
+    .all-tools {
+        @include tablet {
+            margin-top: 40px;
+        }
+        @include all-phone {
+            margin-top: 40px;
+        }
+    }
+    .single-tool {
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        text-align: center;
+        height: 180px;
+        display: grid;
+        place-content: center;
+        margin-bottom: 30px;
+        img {
+            width: auto;
+            margin: 0 auto 15px;
+        }
+    }
+}

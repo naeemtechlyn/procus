@@ -2257,6 +2257,132 @@ nav {
     .process-slider-part .process-slider-2 .single-slide.active {
       background-color: #ffff00; }
 
+.team-member-info {
+  background-color: #000000; }
+  .team-member-info h2 {
+    color: #ffffff; }
+  .team-member-info .member-info-box {
+    padding: 30px;
+    border: 1px solid #ffff00;
+    border-radius: 20px; }
+    @media (max-width: 575.98px) {
+      .team-member-info .member-info-box {
+        padding: 15px; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .team-member-info .member-image {
+      margin-bottom: 40px; } }
+  @media (max-width: 767.98px) {
+    .team-member-info .member-image {
+      margin-bottom: 40px; } }
+  .team-member-info .member-image img {
+    border-radius: 20px; }
+  .team-member-info .member-content h2 {
+    font-weight: 500; }
+  .team-member-info .single-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px; }
+    .team-member-info .single-info:hover .info-icon span {
+      color: #ffff00;
+      border: 1px solid rgba(255, 255, 0, 0.5); }
+    .team-member-info .single-info .info-icon span {
+      color: #6D6D6D;
+      border: 1px solid #4F4F4F;
+      border-radius: 5px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
+    .team-member-info .single-info h5 {
+      color: #ffffff; }
+  .team-member-info .member-social h5 {
+    color: #ffffff; }
+  .team-member-info .member-social ul li {
+    display: inline;
+    margin-right: 20px; }
+    .team-member-info .member-social ul li a {
+      color: #ffffff;
+      font-size: 24px;
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
+      .team-member-info .member-social ul li a:hover {
+        color: #ffff00; }
+
+.experience-education-area {
+  background-color: #141414; }
+  .experience-education-area h2 {
+    color: #ffffff; }
+    .experience-education-area h2 span {
+      font-size: 36px;
+      position: relative;
+      top: -5px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .experience-education-area .education-part {
+      margin-top: 60px; } }
+  @media (max-width: 767.98px) {
+    .experience-education-area .education-part {
+      margin-top: 60px; } }
+  .experience-education-area .single-item {
+    padding: 40px;
+    border-left: 1px solid #4F4F4F; }
+    .experience-education-area .single-item + .single-item {
+      border-top: 1px solid #4F4F4F; }
+    .experience-education-area .single-item:first-child {
+      padding-top: 0; }
+    .experience-education-area .single-item:last-child {
+      padding-bottom: 0; }
+    .experience-education-area .single-item span.item-date {
+      color: #ffff00;
+      position: relative; }
+      .experience-education-area .single-item span.item-date::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -45px;
+        width: 10px;
+        height: 10px;
+        background-color: #ffff00;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 0 4px 2px rgba(255, 255, 0, 0.5);
+        box-shadow: 0 0 4px 2px rgba(255, 255, 0, 0.5); }
+    .experience-education-area .single-item span, .experience-education-area .single-item p {
+      color: #B0B0B0; }
+    .experience-education-area .single-item p {
+      margin-top: 10px; }
+
+.skills-tools-area {
+  background-color: #000000; }
+  .skills-tools-area h2 {
+    color: #ffffff; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .skills-tools-area .all-tools {
+      margin-top: 40px; } }
+  @media (max-width: 767.98px) {
+    .skills-tools-area .all-tools {
+      margin-top: 40px; } }
+  .skills-tools-area .single-tool {
+    border: 1px solid #4F4F4F;
+    border-radius: 10px;
+    text-align: center;
+    height: 180px;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    margin-bottom: 30px; }
+    .skills-tools-area .single-tool img {
+      width: auto;
+      margin: 0 auto 15px; }
+
 /* home-02 */
 .hero-home-2 {
   background-image: url("../images/hero-bg-home-2.png");
