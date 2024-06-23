@@ -2383,6 +2383,68 @@ nav {
       width: auto;
       margin: 0 auto 15px; }
 
+.case-studies-area {
+  background-color: #141414; }
+  .case-studies-area .single-case-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5%;
+    margin-bottom: 60px; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .case-studies-area .single-case-item {
+        display: inherit; }
+        .case-studies-area .single-case-item .case-image {
+          width: 100% !important; }
+        .case-studies-area .single-case-item .case-content {
+          width: 100% !important;
+          margin-top: 30px; } }
+    @media (max-width: 767.98px) {
+      .case-studies-area .single-case-item {
+        display: inherit; }
+        .case-studies-area .single-case-item .case-image {
+          width: 100% !important; }
+        .case-studies-area .single-case-item .case-content {
+          width: 100% !important;
+          margin-top: 30px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .case-studies-area .single-case-item.item-reverse {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; } }
+    @media (max-width: 767.98px) {
+      .case-studies-area .single-case-item.item-reverse {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; } }
+    .case-studies-area .single-case-item:hover .case-image img {
+      border: 1px solid #ffff00; }
+    .case-studies-area .single-case-item .case-image {
+      width: 60%; }
+      .case-studies-area .single-case-item .case-image img {
+        border-radius: 20px;
+        border: 1px solid transparent;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
+    .case-studies-area .single-case-item .case-content {
+      width: 35%; }
+      .case-studies-area .single-case-item .case-content h3 a {
+        color: #ffffff;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
+        .case-studies-area .single-case-item .case-content h3 a:hover {
+          color: #ffff00; }
+
 /* home-02 */
 .hero-home-2 {
   background-image: url("../images/hero-bg-home-2.png");

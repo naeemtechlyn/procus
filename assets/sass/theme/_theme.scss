@@ -1186,3 +1186,69 @@
         }
     }
 }
+
+.case-studies-area {
+    background-color: $secondary-color;
+    .single-case-item {
+        display: flex;
+        gap: 5%;
+        margin-bottom: 60px;
+        @include tablet {
+            display: inherit;
+            .case-image {
+                width: 100%!important;
+            }
+            .case-content {
+                width: 100%!important;
+                margin-top: 30px;
+            }
+        }
+        @include all-phone {
+            display: inherit;
+            .case-image {
+                width: 100%!important;
+            }
+            .case-content {
+                width: 100%!important;
+                margin-top: 30px;
+            }
+        }
+        &.item-reverse {
+            @include tablet {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            @include all-phone {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+        &:hover {
+            .case-image {
+                img {
+                    border: 1px solid $primary-color;
+                }
+            }
+        }
+        .case-image {
+            width: 60%;
+            img {
+                border-radius: 20px;
+                border: 1px solid transparent;
+                transition: $transition;
+            }
+        }
+        .case-content {
+            width: 35%;
+            h3 {
+                a {
+                    color: $white-color;
+                    transition: $transition;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
