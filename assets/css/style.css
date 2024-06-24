@@ -2516,6 +2516,98 @@ nav {
           color: #ffff00;
           border: 1px solid #ffff00; }
 
+.blog-2-column {
+  background-color: #000000; }
+  .blog-2-column .blog-single-slide {
+    max-width: 95%;
+    margin-bottom: 50px; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .blog-2-column .blog-single-slide {
+        max-width: 100%; } }
+    @media (max-width: 767.98px) {
+      .blog-2-column .blog-single-slide {
+        max-width: 100%; } }
+
+.blog-page-categories li {
+  margin-bottom: 20px;
+  display: inline-block; }
+  .blog-page-categories li.active a {
+    color: #000000;
+    background-color: #ffff00; }
+    .blog-page-categories li.active a span {
+      color: #ffff00;
+      background-color: #000000;
+      border: 1px solid transparent; }
+  .blog-page-categories li a {
+    color: #B0B0B0;
+    text-transform: capitalize;
+    padding: 7px 15px;
+    border-radius: 30px;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in; }
+    .blog-page-categories li a:hover {
+      color: #000000;
+      background-color: #ffff00; }
+      .blog-page-categories li a:hover span {
+        color: #ffffff;
+        background-color: #000000;
+        border: 1px solid transparent; }
+    .blog-page-categories li a span.total-post {
+      display: inline-block;
+      font-size: 14px;
+      height: 25px;
+      width: 25px;
+      line-height: 25px;
+      border: 1px solid #4F4F4F;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
+  .blog-page-categories li select {
+    background-color: transparent;
+    color: #B0B0B0;
+    border: 1px solid #ffff00;
+    padding: 5px 10px;
+    border-radius: 30px; }
+
+.blog-pagination {
+  text-align: center;
+  margin-top: 30px; }
+  .blog-pagination li {
+    display: inline-block;
+    margin: 0 5px;
+    color: #ffffff;
+    border: 1px solid #ffff00;
+    background-color: transparent;
+    text-transform: capitalize;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-bottom: 20px; }
+    .blog-pagination li:hover {
+      color: #000000;
+      background-color: #ffff00;
+      border: 1px solid transparent; }
+    .blog-pagination li.active {
+      color: #000000;
+      background-color: #ffff00;
+      border: 1px solid transparent; }
+    .blog-pagination li.page-number {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      text-align: center; }
+    .blog-pagination li.prev-post, .blog-pagination li.next-post {
+      padding: 8px 20px;
+      border-radius: 30px; }
+      .blog-pagination li.prev-post span, .blog-pagination li.next-post span {
+        position: relative;
+        top: 1px; }
+
 /* home-02 */
 .hero-home-2 {
   background-image: url("../images/hero-bg-home-2.png");

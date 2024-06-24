@@ -1338,3 +1338,111 @@
         }
     }
 }
+
+.blog-2-column {
+    background-color: $black-color;
+    .blog-single-slide {
+        max-width: 95%;
+        margin-bottom: 50px;
+        @include tablet {
+            max-width: 100%;
+        }
+        @include all-phone {
+            max-width: 100%;
+        }
+    }
+}
+
+.blog-page-categories {
+    li {
+        margin-bottom: 20px;
+        display: inline-block;
+        &.active {
+            a {
+                color: $black-color;
+                background-color: $primary-color;
+                span {
+                    color: $primary-color;
+                    background-color: $black-color;
+                    border: 1px solid transparent;
+                }
+            }
+        }
+        a {
+            color: $heading-color;
+            text-transform: capitalize;
+            padding: 7px 15px;
+            border-radius: 30px;
+            transition: $transition;
+            &:hover {
+                color: $black-color;
+                background-color: $primary-color;
+                span {
+                    color: $white-color;
+                    background-color: $black-color;
+                    border: 1px solid transparent;
+                }
+            }
+            span.total-post {
+                display: inline-block;
+                font-size: 14px;
+                height: 25px;
+                width: 25px;
+                line-height: 25px;
+                border: 1px solid $border-color;
+                text-align: center;
+                border-radius: 10px;
+                transition: $transition;
+            }
+        }
+        select {
+            background-color: transparent;
+            color: $heading-color;
+            border: 1px solid $primary-color;
+            padding: 5px 10px;
+            border-radius: 30px;
+        }
+    }
+}
+
+.blog-pagination {
+    text-align: center;
+    margin-top: 30px;
+    li {
+        display: inline-block;
+        margin: 0 5px;
+        color: $white-color;
+        border: 1px solid $primary-color;
+        background-color: transparent;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: $transition;
+        margin-bottom: 20px;
+        &:hover {
+            color: $black-color;
+            background-color: $primary-color;
+            border: 1px solid transparent;
+        }
+        &.active {
+            color: $black-color;
+            background-color: $primary-color;
+            border: 1px solid transparent;
+        }
+        &.page-number {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        &.prev-post,
+        &.next-post {
+            padding: 8px 20px;
+            border-radius: 30px;
+            span {
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+}
