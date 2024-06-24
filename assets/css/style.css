@@ -2445,6 +2445,77 @@ nav {
         .case-studies-area .single-case-item .case-content h3 a:hover {
           color: #ffff00; }
 
+.case-details-content {
+  background-color: #000000; }
+  .case-details-content img {
+    border-radius: 20px; }
+  .case-details-content .case-info {
+    padding: 30px 40px 0;
+    border-bottom: 1px solid #4F4F4F;
+    margin-bottom: 50px; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .case-details-content .case-info {
+        padding: 30px 0; } }
+    @media (max-width: 767.98px) {
+      .case-details-content .case-info {
+        padding: 30px 0; } }
+  .case-details-content .single-info {
+    margin-bottom: 30px; }
+    .case-details-content .single-info h4 {
+      color: #B0B0B0; }
+    .case-details-content .single-info span {
+      color: #ffff00; }
+  .case-details-content h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #4F4F4F;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-bottom: 50px; }
+  .case-details-content h3 {
+    color: #ffffff; }
+  .case-details-content .single-box {
+    padding: 80px 60px 70px;
+    border: 1px solid #4F4F4F;
+    border-radius: 20px;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    max-width: 600px;
+    margin-bottom: 40px; }
+    @media (max-width: 767.98px) {
+      .case-details-content .single-box {
+        padding: 30px; } }
+    .case-details-content .single-box:hover {
+      border: 1px solid #ffff00; }
+  .case-details-content .case-images-gallery img {
+    margin-bottom: 30px; }
+  .case-details-content .requirement-list li {
+    margin-bottom: 15px;
+    color: #B0B0B0; }
+    .case-details-content .requirement-list li span {
+      color: #ffff00;
+      margin-right: 5px; }
+  .case-details-content .preview-links {
+    margin-top: 50px; }
+    .case-details-content .preview-links li {
+      display: inline;
+      margin-right: 20px;
+      text-transform: capitalize; }
+      .case-details-content .preview-links li a {
+        display: inline-block;
+        color: #ffffff;
+        padding: 7px 10px;
+        border: 1px solid #ffffff;
+        border-radius: 30px;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
+        .case-details-content .preview-links li a:hover {
+          color: #ffff00;
+          border: 1px solid #ffff00; }
+
 /* home-02 */
 .hero-home-2 {
   background-image: url("../images/hero-bg-home-2.png");
