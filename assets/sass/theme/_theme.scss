@@ -1612,3 +1612,40 @@
         }
     }
 }
+
+.contact-info-area {
+    background-color: $black-color;
+    .single-info {
+        padding: 30px 20px;
+        text-align: center;
+        border: 1px solid $border-color;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        background-image: linear-gradient(rgba($secondary-color, .1), rgba($primary-color, .1));
+        transition: $transition;
+        span {
+            display: block;
+            margin: 5px 0;
+            &.info-icon {
+                font-size: 30px;
+                transition: $transition;
+            }
+        }
+        h4 {
+            margin-bottom: 10px;
+        }
+        &.active {
+            border: 1px solid rgba($primary-color, .5);
+            background-image: linear-gradient(rgba($primary-color, .1), rgba($secondary-color, .1));
+            span {
+                &.info-icon {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.contact-form-area {
+    background-color: $black-color;
+}

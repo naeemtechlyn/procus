@@ -411,6 +411,12 @@
             singleChoose.removeClass('active');
             $(this).addClass('active');
         });
+        
+        var singleInfo = $('.contact-info-area .single-info')
+        singleInfo.mouseover(function() {
+            singleInfo.removeClass('active');
+            $(this).addClass('active');
+        });
 
         // working process slider
         $('.working-process-slider').slick({
