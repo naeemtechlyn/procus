@@ -2565,6 +2565,9 @@ nav {
       -webkit-transition: all 0.2s ease-in;
       -o-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in; }
+  .blog-page-categories li.right {
+    float: right;
+    margin-right: 20px; }
   .blog-page-categories li select {
     background-color: transparent;
     color: #B0B0B0;

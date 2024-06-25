@@ -1395,6 +1395,10 @@
                 transition: $transition;
             }
         }
+        &.right {
+            float: right;
+            margin-right: 20px;
+        }
         select {
             background-color: transparent;
             color: $heading-color;
