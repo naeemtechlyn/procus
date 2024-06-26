@@ -2907,6 +2907,26 @@ nav {
     position: relative;
     top: -3px; }
 
+.error-content {
+  background-color: #000000;
+  text-align: center; }
+  .error-content span.error-text {
+    font-size: 200px;
+    color: #ffff00;
+    font-weight: 700;
+    line-height: 1em; }
+    @media (max-width: 767.98px) {
+      .error-content span.error-text {
+        font-size: 120px; } }
+  .error-content h2 {
+    color: #ffffff; }
+  .error-content img {
+    width: auto;
+    margin: auto; }
+    @media (max-width: 575.98px) {
+      .error-content img {
+        width: 100%; } }
+
 /* home-02 */
 .hero-home-2 {
   background-image: url("../images/hero-bg-home-2.png");

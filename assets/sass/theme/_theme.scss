@@ -1684,3 +1684,27 @@
         }
     }
 }
+
+.error-content {
+    background-color: $black-color;
+    text-align: center;
+    span.error-text {
+        font-size: 200px;
+        color: $primary-color;
+        font-weight: 700;
+        line-height: 1em;
+        @include all-phone {
+            font-size: 120px;
+        }
+    }
+    h2 {
+        color: $white-color;
+    }
+    img {
+        width: auto;
+        margin: auto;
+        @include portrait-phone {
+            width: 100%;
+        }
+    }
+}
