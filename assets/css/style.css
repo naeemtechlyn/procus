@@ -2886,6 +2886,18 @@ nav {
 .contact-form-area {
   background-color: #000000; }
 
+.faq-area {
+  background-color: #000000; }
+
+.terms-content {
+  background-color: #000000; }
+  .terms-content h4 {
+    color: #ffff00; }
+  .terms-content .list-items li span {
+    color: #ffff00;
+    display: inline-block;
+    margin-right: 5px; }
+
 /* home-02 */
 .hero-home-2 {
   background-image: url("../images/hero-bg-home-2.png");

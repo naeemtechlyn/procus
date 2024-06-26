@@ -1649,3 +1649,23 @@
 .contact-form-area {
     background-color: $black-color;
 }
+
+.faq-area {
+    background-color: $black-color;
+}
+
+.terms-content {
+    background-color: $black-color;
+    h4 {
+        color: $primary-color;
+    }
+    .list-items {
+        li {
+            span {
+                color: $primary-color;
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
+    }
+}
