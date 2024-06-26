@@ -43,6 +43,15 @@
 }
 
 .contact-form-3 .radio-buttons {
+    .form-group {
+        padding: 10px 45px 10px 15px;
+        border: 1px solid $border-color;
+        border-radius: 20px;
+        display: inline-block;
+        margin-right: 15px;
+        line-height: 0;
+        margin-bottom: 15px;
+    }
     input[type="radio"] {
         display: none;
     }
@@ -50,19 +59,24 @@
     label {
     cursor: pointer;
     position: relative;
-    font-size: 4rem;
+    font-size: 16px;
+    color: $white-color;
+    line-height: 0;
+    margin: 0;
+    text-transform: capitalize;
+    padding: 10px 0;
     }
     
     label::before {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 15px;
+    height: 15px;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 50%;
     top: 50%;
-    left: -5rem;
+    right: -25px;
     transform: translateY(-50%);
     transition: border-color 400ms ease;
     }
@@ -70,24 +84,34 @@
     label::after {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 15px;
+    height: 15px;
     background-color: $primary-color;
-    border: 2px solid $primary-color;
+    border: 1px solid $primary-color;
     border-radius: 50%;
     top: 50%;
-    left: -5rem;
+    right: -25px;
     transform: translateY(-50%) scale(0);
     transition: transform 400ms ease;
     }
     
     input[type="radio"]:checked + label::before {
-    border-color: $primary-color;
+        border-color: $primary-color;
     }
     
     input[type="radio"]:checked + label::after {
     transform: translateY(-50%) scale(0.55);
     } 
+}
+
+.contact-form-3 label.privacy-policy {
+    font-size: 16px;
+    position: relative;
+    top: -5px;
+    a {
+        color: $white-color;
+        text-decoration: underline;
+    }
 }
 
 .contact-form-3 .attachment-btn {
@@ -112,4 +136,6 @@
 
 .contact-form-3 input[type="checkbox"] {
     margin-right: 10px;
+    width: auto;
+    float: left;
 }

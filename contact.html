@@ -123,7 +123,7 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="row mt-60">
-                        <div class="col-lg-4">
+                        <div class="col-md-4">
                             <div class="single-info">
                                 <span class="info-icon"><i class="fa-solid fa-phone-volume"></i></span>
                                 <h4>Phone</h4>
@@ -131,7 +131,7 @@
                                 <span>+(123) 456789000</span>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-md-4">
                             <div class="single-info active">
                                 <span class="info-icon"><i class="fa-regular fa-envelope"></i></span>
                                 <h4>email</h4>
@@ -139,7 +139,7 @@
                                 <span>info@procus.com</span>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-md-4">
                             <div class="single-info">
                                 <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
                                 <h4>location</h4>
@@ -177,7 +177,7 @@
                     <img src="assets/images/contact-form-image.png" alt="contact-image">
                 </div>
 
-                <div class="col-lg-6 offset-lg-1">
+                <div class="col-xl-6 offset-xl-1 col-lg-7">
                     <div class="contact-form-3">
                         <form action="#" method="POST">
                             <div class="form-group">
@@ -192,17 +192,27 @@
                                 <label>I found you using</label>
                                 <div class="radio-buttons">
                                     <div class="form-group">
-                                      <input type="radio" id="male" name="gender" />
-                                      <label for="male">Male</label>
+                                      <input type="radio" id="mouth" name="know" />
+                                      <label for="mouth">Word of mouth</label>
+                                    </div>
+
+                                    <div class="form-group">
+                                      <input type="radio" id="facebook" name="know" />
+                                      <label for="facebook">facebook</label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="radio" id="twitter" name="know" />
+                                        <label for="twitter">twitter</label>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <input type="radio" id="linkedin" name="know" />
+                                        <label for="linkedin">linkedin</label>
                                     </div>
                                   
                                     <div class="form-group">
-                                      <input type="radio" id="female" name="gender" />
-                                      <label for="female">Female</label>
-                                    </div>
-                                  
-                                    <div class="form-group">
-                                      <input type="radio" id="other" name="gender" />
+                                      <input type="radio" id="other" name="know" />
                                       <label for="other">Other</label>
                                     </div>
                                 </div>
@@ -213,19 +223,36 @@
                             </div>
                             <div class="form-group">
                                 <label>My Budget is around</label>
-                                
+                                <div class="radio-buttons">
+                                    <div class="form-group">
+                                      <input type="radio" id="price-1" name="budget" />
+                                      <label for="price-1">$ 5,000-15,000</label>
+                                    </div>
+                                    <div class="form-group">
+                                      <input type="radio" id="price21" name="budget" />
+                                      <label for="price-2">$ 5,000-15,000</label>
+                                    </div>
+                                    <div class="form-group">
+                                      <input type="radio" id="price-3" name="budget" />
+                                      <label for="price-3">$ 50,000+</label>
+                                    </div>
+                                    <div class="form-group">
+                                      <input type="radio" id="price-4" name="budget" />
+                                      <label for="price-4">$ 30,000-50,000</label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="project-details">I’d like to share more about my project details:</label>
                                 <textarea id="project-details" name="project-details" placeholder="Tell something about your project" rows="4" required></textarea>
                             </div>
                             <div class="form-group">
-                                <input type="file" id="attachment" name="attachment" style="display: none;">
-                                <label for="attachment" class="attachment-btn"><i class="fas fa-paperclip"></i> Add attachment</label>
+                                <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                                <label class="privacy-policy" for="privacy-policy">I agree with the <a href="#">privacy policy</a></label>
                             </div>
                             <div class="form-group">
-                                <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
-                                <label for="privacy-policy">I agree with the <a href="#">privacy policy</a></label>
+                                <input type="file" id="attachment" name="attachment" style="display: none;">
+                                <label for="attachment" class="attachment-btn"><i class="fas fa-paperclip"></i> Add attachment</label>
                             </div>
                             <button type="submit" class="primary-btn">Let's get started <span><i class="fas fa-arrow-right"></i></span></button>
                         </form>
