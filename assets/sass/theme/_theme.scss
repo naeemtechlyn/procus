@@ -1656,6 +1656,10 @@
 
 .terms-content {
     background-color: $black-color;
+    h3 {
+        color: $white-color;
+        text-transform: lowercase;
+    }
     h4 {
         color: $primary-color;
     }
@@ -1665,6 +1669,17 @@
                 color: $primary-color;
                 display: inline-block;
                 margin-right: 5px;
+                margin-left: 5px;
+            }
+        }
+    }
+    .list-items.privacy-list {
+        li {
+            span {
+                font-size: 5px;
+                color: $white-color;
+                position: relative;
+                top: -3px;
             }
         }
     }

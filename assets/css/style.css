@@ -2891,12 +2891,21 @@ nav {
 
 .terms-content {
   background-color: #000000; }
+  .terms-content h3 {
+    color: #ffffff;
+    text-transform: lowercase; }
   .terms-content h4 {
     color: #ffff00; }
   .terms-content .list-items li span {
     color: #ffff00;
     display: inline-block;
-    margin-right: 5px; }
+    margin-right: 5px;
+    margin-left: 5px; }
+  .terms-content .list-items.privacy-list li span {
+    font-size: 5px;
+    color: #ffffff;
+    position: relative;
+    top: -3px; }
 
 /* home-02 */
 .hero-home-2 {
