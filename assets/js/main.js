@@ -482,6 +482,34 @@
             ]
         });
 
+        // Tab functionality
+        $('.tab-menu-item').on('click', function() {
+            var tabId = $(this).data('tab');
+
+            // Remove active class from all tab-menu-item and tab-content-item
+            $('.tab-menu-item').removeClass('active');
+            $('.tab-content-item').removeClass('active');
+
+            // Add active class to the clicked tab-menu-item and corresponding tab-content-item
+            $(this).addClass('active');
+            $('#' + tabId).addClass('active');
+        });
+
+        // Accordion functionality
+        $('.accordion-header').on('click', function() {
+            // Remove active class from all accordion-header and accordion-content
+            $('.accordion-header').removeClass('active');
+            $('.accordion-content').removeClass('active');
+
+            // Add active class to the clicked accordion-header and corresponding accordion-content
+            $(this).addClass('active');
+            $(this).next('.accordion-content').addClass('active');
+        });
+
+        // Ensure one accordion item is active initially
+        $('.accordion-item:first-child .accordion-header').addClass('active');
+        $('.accordion-item:first-child .accordion-content').addClass('active');
+
     });
 
     $(window).on('scroll', function () {
