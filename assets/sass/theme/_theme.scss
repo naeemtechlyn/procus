@@ -815,6 +815,7 @@
 
 .working-process-services {
     background-color: $secondary-color;
+    overflow: hidden;
 
     .slick-slide {
         padding: 40px 30px;
@@ -823,16 +824,6 @@
         margin-bottom: 30px;
         transition: $transition;
         margin: 15px 0;
-    }
-
-    .slick-current {
-        border: 1px solid $primary-color;
-        h3 {
-            color: $white-color;
-        }
-        p {
-            opacity: 1;
-        }
     }
 
     .slick-dots {
@@ -862,6 +853,37 @@
     .slick-dots .slick-active button {
         opacity: 1;
         visibility: visible;
+    }
+}
+
+.working-process-slider {
+    position: relative;
+    z-index: 1;
+    scale: 1.1;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 30%;
+        background-image: linear-gradient($secondary-color, transparent);
+        z-index: 2;
+        @include all-phone {
+            display: none;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 30%;
+        background-image: linear-gradient( to top, $secondary-color, transparent);
+        @include all-phone {
+            display: none;
+        }
     }
 }
 
@@ -999,27 +1021,42 @@
 
 .process-slider-part {
     border-top: 1px solid $border-color;
+    position: relative;
+    z-index: 1;
     .slick-slider {
         margin: 0 -15px;
     }
     .slick-slide {
         margin: 0 15px;
     }
+    .slick-current {
+        background-color: $primary-color!important;
+        margin-top: 70px!important;
+        img.shape-image {
+            opacity: 1!important;
+            visibility: visible!important;
+        }
+    }
 
     .process-slider-2 {
+        position: relative;
+        z-index: 9;
         .single-slide {
             padding: 30px 20px 20px;
             border-radius: 20px;
-            background-color: $white-color;
+            background-color: $process-slide-bg; 
             position: relative;
             transition: $transition;
+            margin-top: 100px;
             img.shape-image {
                 width: auto;
                 position: absolute;
-                top: 0;
+                top: -70px;
                 left: 50%;
                 transform: translateX(-50%);
                 transition: $transition;
+                z-index: 9;
+                opacity: 0;
             } 
             span.slide-number {
                 display: block;
@@ -1044,9 +1081,6 @@
                 color: $secondary-color;
                 transition: $transition;
                 font-size: 15px;
-            }
-            &.active {
-                background-color: $primary-color;
             }
         }
     }

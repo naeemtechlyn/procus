@@ -2257,7 +2257,8 @@ nav {
       opacity: 1; }
 
 .working-process-services {
-  background-color: #141414; }
+  background-color: #141414;
+  overflow: hidden; }
   .working-process-services .slick-slide {
     padding: 40px 30px;
     border: 1px solid #4F4F4F;
@@ -2267,12 +2268,6 @@ nav {
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     margin: 15px 0; }
-  .working-process-services .slick-current {
-    border: 1px solid #ffff00; }
-    .working-process-services .slick-current h3 {
-      color: #ffffff; }
-    .working-process-services .slick-current p {
-      opacity: 1; }
   .working-process-services .slick-dots {
     position: absolute;
     top: 50%;
@@ -2299,6 +2294,40 @@ nav {
   .working-process-services .slick-dots .slick-active button {
     opacity: 1;
     visibility: visible; }
+
+.working-process-slider {
+  position: relative;
+  z-index: 1;
+  scale: 1.1; }
+  .working-process-slider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#141414), to(transparent));
+    background-image: -webkit-linear-gradient(#141414, transparent);
+    background-image: -o-linear-gradient(#141414, transparent);
+    background-image: linear-gradient(#141414, transparent);
+    z-index: 2; }
+    @media (max-width: 767.98px) {
+      .working-process-slider::before {
+        display: none; } }
+  .working-process-slider::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#141414), to(transparent));
+    background-image: -webkit-linear-gradient(bottom, #141414, transparent);
+    background-image: -o-linear-gradient(bottom, #141414, transparent);
+    background-image: linear-gradient(to top, #141414, transparent); }
+    @media (max-width: 767.98px) {
+      .working-process-slider::after {
+        display: none; } }
 
 .working-process-single-slide h3 {
   -webkit-transition: all 0.2s ease-in;
@@ -2412,59 +2441,71 @@ nav {
     color: #ffffff; }
 
 .process-slider-part {
-  border-top: 1px solid #4F4F4F; }
+  border-top: 1px solid #4F4F4F;
+  position: relative;
+  z-index: 1; }
   .process-slider-part .slick-slider {
     margin: 0 -15px; }
   .process-slider-part .slick-slide {
     margin: 0 15px; }
-  .process-slider-part .process-slider-2 .single-slide {
-    padding: 30px 20px 20px;
-    border-radius: 20px;
-    background-color: #ffffff;
+  .process-slider-part .slick-current {
+    background-color: #ffff00 !important;
+    margin-top: 70px !important; }
+    .process-slider-part .slick-current img.shape-image {
+      opacity: 1 !important;
+      visibility: visible !important; }
+  .process-slider-part .process-slider-2 {
     position: relative;
-    -webkit-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in; }
-    .process-slider-part .process-slider-2 .single-slide img.shape-image {
-      width: auto;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      -webkit-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in; }
-    .process-slider-part .process-slider-2 .single-slide span.slide-number {
-      display: block;
-      color: #ffffff;
-      background-color: #141414;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 50px;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      text-align: center;
-      margin-bottom: 20px;
-      -webkit-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in; }
-    .process-slider-part .process-slider-2 .single-slide h4 {
-      color: #141414;
-      font-weight: 700;
-      -webkit-transition: all 0.2s ease-in;
-      -o-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in; }
-    .process-slider-part .process-slider-2 .single-slide p {
-      color: #141414;
+    z-index: 9; }
+    .process-slider-part .process-slider-2 .single-slide {
+      padding: 30px 20px 20px;
+      border-radius: 20px;
+      background-color: #FBFFE7;
+      position: relative;
       -webkit-transition: all 0.2s ease-in;
       -o-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in;
-      font-size: 15px; }
-    .process-slider-part .process-slider-2 .single-slide.active {
-      background-color: #ffff00; }
+      margin-top: 100px; }
+      .process-slider-part .process-slider-2 .single-slide img.shape-image {
+        width: auto;
+        position: absolute;
+        top: -70px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        z-index: 9;
+        opacity: 0; }
+      .process-slider-part .process-slider-2 .single-slide span.slide-number {
+        display: block;
+        color: #ffffff;
+        background-color: #141414;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
+      .process-slider-part .process-slider-2 .single-slide h4 {
+        color: #141414;
+        font-weight: 700;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
+      .process-slider-part .process-slider-2 .single-slide p {
+        color: #141414;
+        -webkit-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+        font-size: 15px; }
 
 .team-member-info {
   background-color: #000000; }
