@@ -98,38 +98,86 @@
     }
 }
 
-.marquee-home-2 {
-    padding: 15px 0 10px;
+.custom-marquee.marquee-style-2 {
+    margin-top: -1px;
     background-color: $black-color;
-    .marque-bg {
-        h4 {
-            color: $home-2-text-color;
-            font-size: 68px;
-            font-weight: 700;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -.5%;
+        left: 0;
+        width: 400px;
+        height: 101%;
+        background-image: linear-gradient(to right, $black-color, transparent);
+        z-index: 2;
+        @include all-phone {
+            display: none;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: -.5%;
+        right: 0;
+        width: 400px;
+        height: 101%;
+        background-image: linear-gradient(to left, $black-color, transparent);
+        @include all-phone {
+            display: none;
+        }
+    }
+    .marquee-content {
+        display: flex;
+        animation: marquee 15s linear infinite;
+        @include tablet {
+            animation: marquee 7s linear infinite;
+        }
+        @include all-phone {
+            animation: marquee 3s linear infinite;
+        }
+    }
+    
+    .marquee-content span {
+        display: inline-block;
+        padding: 0 60px;
+        color: $home-2-text-color;
+        font-size: 68px;
+        font-weight: 700;
+        position: relative;
+        text-transform: uppercase;
+        @include all-phone {
+            font-size: 60px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            width: 60px;
+            height: 60px;
+            background-image: url('../images/marquee-vector-home-2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             @include all-phone {
-                font-size: 60px;
-            }
-            span {
-                display: inline-block;
-                margin: 0 60px;
-                position: relative;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 12px;
-                    left: -80px;
-                    width: 60px;
-                    height: 60px;
-                    background-image: url('../images/marquee-vector-home-2.png');
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    @include all-phone {
-                        width: 50px;
-                        height: 50px;
-                    }
-                }
+                width: 50px;
+                height: 50px;
             }
         }
+    }
+
+    .marquee-row-1 {
+        animation-direction: normal;
+    }
+    
+    .marquee-row-2 {
+        animation-direction: reverse;
+    }
+    
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
     }
 }
 

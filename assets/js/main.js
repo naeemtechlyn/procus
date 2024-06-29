@@ -28,7 +28,6 @@
                 $(".accordion-list > li.active").removeClass("active");
                 $(this).addClass("active").find(".answer").slideDown();
             }
-            return false;
         });
 
         // portfolio slider
@@ -328,7 +327,7 @@
         $('.testimonial-slider-home-3').slick({
             dots: false,
             infinite: true,
-            speed: 4000,
+            speed: 6000,
             autoplay: true,
             autoplaySpeed: 0,
             slidesToShow: 2,
@@ -359,7 +358,7 @@
         $('.testimonial-slider-2-home-3').slick({
             dots: false,
             infinite: true,
-            speed: 3500,
+            speed: 5000,
             autoplay: true,
             autoplaySpeed: 0,
             slidesToShow: 2,

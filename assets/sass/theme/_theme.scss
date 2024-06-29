@@ -101,42 +101,67 @@
     }
 }
 
-.marquee-area {
-    .marque-primary-bg {
-        padding: 15px 0 10px;
+.custom-marquee {
+    .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+    }
+    
+    .marquee {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .marquee-content {
+        display: flex;
+        animation: marquee 20s linear infinite;
+        @include tablet {
+            animation: marquee 10s linear infinite;
+        }
+        @include all-phone {
+            animation: marquee 5s linear infinite;
+        }
+    }
+
+    .primary-bg {
+        padding: 10px 0;
         background-color: $primary-color;
-        h4 {
-            color: $black-color;
-        }
-    }
-    .marque-black-bg {
-        padding: 15px 0 10px;
-        background-color: $black-color;
-        h4 {
-            color: $primary-color;
-            span {
-                &::before {
-                    background-image: url('../images/marquee-vector-02.png');
-                }
-            }
-        }
-    }
-    h4 {
         span {
-            display: inline-block;
-            margin: 0 40px;
-            position: relative;
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: -40px;
-                width: 40px;
-                height: 40px;
-                background-image: url('../images/marquee-vector.png');
-                background-repeat: no-repeat;
-            }
+            color: $black-color;
+            font-size: 24px;
+            font-weight: 500;
+
         }
+    }
+    
+    .black-bg {
+        padding: 10px 0;
+        background-color: $black-color;
+        span {
+            color: $primary-color;
+            font-size: 24px;
+            font-weight: 500;
+
+        }
+    }
+    
+    .marquee-row-1 {
+        animation-direction: normal;
+    }
+    
+    .marquee-row-2 {
+        animation-direction: reverse;
+    }
+    
+    .marquee-content span {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
     }
 }
 
@@ -668,20 +693,21 @@
     background-image: url('../images/get-in-touch-bg.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     overflow: hidden;
-    padding: 200px 0 400px;
+    padding: 140px 0 300px;
     background-color: $secondary-color;
     text-align: center;
     @include tablet {
-        padding: 80px 0 250px;
+        padding: 60px 0 200px;
     }
     @include all-phone {
-        padding: 80px 0 250px;
+        padding: 60px 0 200px;
     }
     a.big-title {
         color: $white-color;
-        font-size: 120px;
+        font-size: 100px;
+        line-height: 1em;
         border-bottom: 5px solid $white-color;
         position: relative;
         padding-right: 90px;
@@ -692,16 +718,17 @@
         span {
             display: inline-block;
             margin-left: 10px;
-            font-size: 100px;
+            font-size: 80px;
             position: absolute;
-            top: 8px;
+            top: 20px;
             transform: rotate(-45deg)
         }
         @include tablet {
-            font-size: 72px;
-            padding-right: 64px;
+            font-size: 48px;
+            padding-right: 45px;
             span {
-                font-size: 60px;
+                font-size: 42px;
+                top: 8px;
             }
         }
         @include all-phone {
@@ -709,7 +736,7 @@
             padding-right: 45px;
             span {
                 font-size: 42px;
-                top: 5px;
+                top: 8px;
             }
         }
     }

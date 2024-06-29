@@ -1,4 +1,80 @@
 /* tab & accordion */
+.service-area {
+    .accordion-list {    
+        li {
+            background-color: transparent;
+            border: 1px solid $border-color;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            &.active {
+                border: 1px solid $primary-color;
+                h3 {
+                    color: $primary-color;
+                    padding-top: 50px;
+                    padding-bottom: 30px;
+                    margin-bottom: -100px;
+                    @include desktop {
+                        padding-bottom: 50px;
+                    }
+                    @include tablet {
+                        margin-bottom: 0;
+                        padding-top: 20px;
+                        padding-bottom: 0;
+                    }
+                    @include all-phone {
+                        margin-bottom: 0;
+                        padding-top: 20px;
+                        padding-bottom: 0;
+                    }
+                }
+            }        
+            
+            h3 {
+                cursor: pointer;
+                padding: 20px 20px 20px 100px;
+                text-transform: capitalize;
+                transition: $transition;
+                span.space-right {
+                    margin-right: 20px;
+                }
+                @include tablet {
+                    padding: 20px;
+                }
+                @include all-phone {
+                    padding: 20px;
+                }
+            }
+            
+            .answer {
+                padding: 0 20px 30px 100px;
+                position: relative;
+                @include tablet {
+                    padding: 20px;
+                }
+                @include all-phone {
+                    padding: 20px;
+                }
+                img.service-image {
+                    width: auto;
+                    margin-left: auto;
+                    transition: $transition;
+                    @include tablet {
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                    @include all-phone {
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                    @include portrait-phone {
+                        max-width: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .faq-area {
         
     .tab-menu {

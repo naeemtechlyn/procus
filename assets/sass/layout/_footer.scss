@@ -173,7 +173,9 @@
     ul {
         margin-top: 30px;
         li {
+            border-bottom: 1px solid $border-color;
             margin: 10px 0;
+            padding: 10px 0;
             a {
                 color: $white-color;
                 transition: $transition;
