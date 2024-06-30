@@ -115,12 +115,12 @@
     
     .marquee-content {
         display: flex;
-        animation: marquee 20s linear infinite;
+        animation: marquee 30s linear infinite;
         @include tablet {
-            animation: marquee 10s linear infinite;
+            animation: marquee 20s linear infinite;
         }
         @include all-phone {
-            animation: marquee 5s linear infinite;
+            animation: marquee 10s linear infinite;
         }
     }
 
@@ -278,13 +278,6 @@
         padding-left: 20px;
         padding-bottom: 80px;
     }
-    .slick-current {
-        .portfolio-image {
-            img {
-                border: 1px solid $primary-color;
-            }
-        }
-    }
 
     .slick-dots {
         position: absolute;
@@ -318,11 +311,51 @@
 }
 
 .portfolio-single {
+    &:hover {
+        .portfolio-image {
+            img {
+                border: 1px solid $primary-color;
+            }
+            .portfolio-btn {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
     .portfolio-image {
+        position: relative;
         img {
             border-radius: 20px;
             border: 1px solid transparent;
             transition: $transition;
+        }
+        .portfolio-btn {
+            position: absolute;
+            bottom: 50px;
+            right: -50px;
+            display: block;
+            color: $white-color;
+            font-size: 24px;
+            font-weight: 500;
+            text-transform: capitalize;
+            transition: $transition;
+            width: 180px;
+            height: 180px;
+            line-height: 160px;
+            border-radius: 50%;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(255, 255, 0, 0.06) 0%, rgba(153, 153, 153, 0.08) 100%);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            transform: rotate(-45deg);
+            opacity: 0;
+            visibility: hidden;
+            span {
+                position: absolute;
+                top: 35px;
+                right: 80px;
+                transform: rotate(90deg);
+            }
         }
     }
 
@@ -367,15 +400,13 @@
         height: 220px;
         border: 1px solid $white-color;
         border-radius: 50%;
+        &:hover {
+            border: 1px solid $primary-color;
+        }
         img {
             width: auto;
             margin: auto;
             padding-top: 85px;
-        }
-    }
-    .slick-current {
-        .brand-logo {
-            border: 1px solid $primary-color;                
         }
     }
     .slick-slide {
@@ -600,18 +631,6 @@
 
 .blog-area {
     background-color: $black-color;
-    .slick-current {
-        .blog-image {
-            img {
-                border: 1px solid $primary-color;
-            }
-        }
-        h4 {
-            a {
-                color: $primary-color;
-            }
-        }
-    }
     .slick-slide {
         margin: 0 20px;
         @include tablet {
@@ -629,6 +648,10 @@
         img {
             border-radius: 20px;
             border: 1px solid transparent;
+            transition: $transition;
+            &:hover {
+                border: 1px solid $primary-color;
+            }
         }
     }
     .blog-meta {
@@ -660,6 +683,8 @@
         li {
             display: inline;
             margin-right: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
             a {
                 display: inline-block;
                 color: $white-color;
@@ -683,6 +708,21 @@
         text-transform: capitalize;
         transition: $transition;
         display: inline-block;
+        position: relative;
+        span {
+            position: absolute;
+            transform: rotate(-45deg);
+            font-size: 16px;
+            top: 3px;
+            right: -35px;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            background-color: $primary-color;
+            color: $black-color;
+            border-radius: 50%;
+            text-align: center;
+        }    
         &:hover {
             color: $primary-color;
         }
@@ -1113,6 +1153,9 @@
     .member-content {
         h2 {
             font-weight: 500;
+            @include portrait-phone {
+                font-size: 30px;
+            }
         }
     }
     .single-info {
@@ -1381,9 +1424,10 @@
     .preview-links {
         margin-top: 50px;
         li {
-            display: inline;
+            display: inline-block;
             margin-right: 20px;
             text-transform: capitalize;
+            margin-bottom: 10px;
             a {
                 display: inline-block;
                 color: $white-color;
@@ -1571,9 +1615,16 @@
     .share-links {
         align-items: center;
         display: flex;
+        @include portrait-phone {
+            display: inherit;
+        }
         li {
             margin-right: 20px;
             text-transform: capitalize;
+            @include portrait-phone {
+                display: inline-block;
+                margin-right: 10px;
+            }
             a {
                 color: $white-color;
                 font-size: 24px;

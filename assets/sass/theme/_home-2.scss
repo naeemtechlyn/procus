@@ -77,9 +77,15 @@
     display: inline-block;
     margin-top: 80px;
     padding: 12px 24px;
+    @include portrait-phone {
+        padding: 12px;
+    }
     li {
         display: inline;
         margin: 0 10px;
+        @include portrait-phone {
+            margin: 0 5px;
+        }
         a {
             display: inline-block;
             padding: 5px 10px;
@@ -90,6 +96,9 @@
             text-transform: capitalize;
             transition: $transition;
             border-radius: 3px;
+            @include portrait-phone {
+                padding: 5px;
+            }
             &:hover {
                 color: $secondary-color;
                 background-color: $primary-color;
@@ -130,12 +139,12 @@
     }
     .marquee-content {
         display: flex;
-        animation: marquee 15s linear infinite;
+        animation: marquee 30s linear infinite;
         @include tablet {
-            animation: marquee 7s linear infinite;
+            animation: marquee 20s linear infinite;
         }
         @include all-phone {
-            animation: marquee 3s linear infinite;
+            animation: marquee 10s linear infinite;
         }
     }
     
@@ -463,8 +472,9 @@ span.big-title {
             visibility: visible;
         }
     }
+
     .slick-slide {
-        margin: 0 25px;
+        margin: 0 20px;
         @include screen-1200 {
             margin: 0 15px;
         }
@@ -476,6 +486,32 @@ span.big-title {
         }
         @include all-phone {
             margin: 0 15px;
+        }
+    }
+
+    .slick-arrow {
+        position: absolute; 
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid $white-color;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 1;
+        transition: $transition;
+        &:hover {
+            color: $primary-color;
+        }
+        &.arrow-left {
+            left: 30%;
+            bottom: 10px;
+        }
+        &.arrow-right {
+            right: 30%;
+            bottom: 10px;
         }
     }
 }
@@ -497,12 +533,24 @@ span.big-title {
             color: $white-color;
             border: 1px solid $white-color;
             font-weight: 400;
-            padding: 10px 20px;
+            padding: 12px 47px 12px 28px;
             opacity: 0;
             visibility: hidden;
+            @include portrait-phone {
+                transform: scale(.7);
+                right: 10px;
+                bottom: 10px;
+            }
             &:hover {
                 color: $secondary-color;
                 border: 1px solid transparent;
+            }
+            span {
+                position: absolute;
+                transform: rotate(-45deg);
+                font-size: 18px;
+                margin-top: 1px;
+                margin-left: 5px;
             }
         }
     }
@@ -514,10 +562,11 @@ span.big-title {
         opacity: 0;
         visibility: hidden;
         .portfolio-tag {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             li {
                 margin-right: 5px;
-                display: inline;
+                margin-bottom: 10px;
+                display: inline-block;
                 a {
                     display: inline-block;
                     color: $white-color;
@@ -534,7 +583,7 @@ span.big-title {
                 }
             }
         }
-        h3 {
+        h4 {
             a {
                 color: $white-color;
                 transition: $transition;
@@ -817,6 +866,21 @@ span.big-title {
         text-transform: capitalize;
         transition: $transition;
         display: inline-block;
+        position: relative;
+        span {
+            position: absolute;
+            transform: rotate(-45deg);
+            font-size: 16px;
+            top: 3px;
+            right: -35px;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            background-color: $primary-color;
+            color: $black-color;
+            border-radius: 50%;
+            text-align: center;
+        } 
         &:hover {
             color: $primary-color;
         }

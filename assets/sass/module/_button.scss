@@ -16,9 +16,9 @@
     span {
         position: absolute;
         transform: rotate(-45deg);
-        font-size: 20px;
-        margin-top: -1px;
-        margin-left: 3px;
+        font-size: 18px;
+        margin-top: 1px;
+        margin-left: 5px;
     }
 
     @include desktop {

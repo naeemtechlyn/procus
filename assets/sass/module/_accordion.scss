@@ -127,6 +127,9 @@
                 font-size: 24px;
                 font-weight: 700;
                 color: $heading-color;
+                @include portrait-phone {
+                    font-size: 18px;
+                }
                 
                 &:after {
                     content: '+';

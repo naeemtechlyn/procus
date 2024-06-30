@@ -62,11 +62,12 @@
         $('.brand-slider').slick({
             dots: false,
             infinite: true,
-            speed: 800,
+            speed: 3000,
             autoplay: true,
-            autoplaySpeed: 1200,
+            autoplaySpeed: 0,
             slidesToShow: 6,
             slidesToScroll: 1,
+            cssEase: 'linear',
             arrows: false,
             centerMode: true,
             variableWidth: true,
@@ -158,13 +159,16 @@
             autoplaySpeed: 2000,
             slidesToShow: 3,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
+            prevArrow: '<span class="arrow-left"><i class="fas fa-arrow-left"></i></span>',
+            nextArrow: '<span class="arrow-right"><i class="fas fa-arrow-right"></i></span>',
             centerMode: true,
             responsive: [{
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
+                    arrows: false,
                 }
             },
             {
@@ -173,6 +177,7 @@
                     dots: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    arrows: false,
                 }
             },
             {
@@ -181,6 +186,7 @@
                     centerMode: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    arrows: false,
                 }
             },
             ]
@@ -266,11 +272,12 @@
         $('.brand-slider-3').slick({
             dots: false,
             infinite: true,
-            speed: 800,
+            speed: 3000,
             autoplay: true,
-            autoplaySpeed: 1200,
+            autoplaySpeed: 0,
             slidesToShow: 8,
             slidesToScroll: 1,
+            cssEase: 'linear',
             arrows: false,
             responsive: [{
                 breakpoint: 1400,
@@ -327,7 +334,7 @@
         $('.testimonial-slider-home-3').slick({
             dots: false,
             infinite: true,
-            speed: 6000,
+            speed: 10000,
             autoplay: true,
             autoplaySpeed: 0,
             slidesToShow: 2,
@@ -350,6 +357,7 @@
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     centerMode: false,
+                    speed: 5000,
                 }
             },
             ]
@@ -358,7 +366,7 @@
         $('.testimonial-slider-2-home-3').slick({
             dots: false,
             infinite: true,
-            speed: 5000,
+            speed: 8000,
             autoplay: true,
             autoplaySpeed: 0,
             slidesToShow: 2,
@@ -381,6 +389,7 @@
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     centerMode: false,
+                    speed: 4000,
                 }
             },
             ]

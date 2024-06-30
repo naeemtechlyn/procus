@@ -244,6 +244,15 @@
             cursor: pointer;
             transition: $transition;
             position: relative;
+            @include all-phone {
+                font-size: 30px;
+            }
+            @include tablet {
+                font-size: 36px;
+            }
+            @include desktop {
+                font-size: 36px;
+            }
             &:hover {
                 color: rgba($white-color, 1);
                 &::before {
@@ -266,6 +275,12 @@
     }
 
     .tab-content {
+        @include tablet {
+            margin-top: 50px;
+        }
+        @include all-phone {
+            margin-top: 50px;
+        }
         img {
             border-radius: 20px;
         }

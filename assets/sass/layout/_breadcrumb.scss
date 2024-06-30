@@ -7,8 +7,11 @@
     background-size: cover;
     padding: 120px 0;
     text-align: center;
-    @include all-phone {
+    @include tablet {
         padding: 100px 0;
+    }
+    @include all-phone {
+        padding: 80px 0;
     }
     ul {
         margin-top: 20px;
@@ -16,6 +19,12 @@
             display: inline-block;
             margin: 0 5px;
             text-transform: capitalize;
+            @include tablet {
+                margin: 0 3px;
+            }
+            @include all-phone {
+                margin: 0 3px;
+            }
             a {
                 color: $white-color;
                 padding: 7px 12px;
@@ -29,7 +38,7 @@
                 }
             }
             span {
-                font-size: 24px;
+                font-size: 20px;
                 position: relative;
                 top: 3px;
             }
