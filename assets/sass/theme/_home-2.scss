@@ -737,8 +737,19 @@ span.big-title {
     overflow: hidden;
     position: relative;
     z-index: 1;
+    .slick-slide {
+        margin: 0 15px;
+    }
+}
 
-    .slick-current {
+.testimonial-slide-2 {
+    position: relative;
+    border: 1px solid $border-color;
+    border-radius: 20px;
+    padding: 30px 80px;
+    transition: $transition;
+    overflow: hidden;
+    &:hover {
         border: 1px solid $primary-color;
         span.testimonial-quote-icon {
             color: $primary-color;
@@ -759,18 +770,6 @@ span.big-title {
             }
         }
     }
-    .slick-slide {
-        margin: 0 15px;
-    }
-}
-
-.testimonial-slide-2 {
-    position: relative;
-    border: 1px solid $border-color;
-    border-radius: 20px;
-    padding: 30px 80px;
-    transition: $transition;
-    overflow: hidden;
 
     @include screen-1200 {
         padding: 30px 40px;
