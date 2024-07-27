@@ -57,7 +57,7 @@ nav {
                 .submenu {
                     position: absolute;
                     width: 200px;
-                    top: 125%;
+                    top: 120%;
                     left: 0;
                     background: $secondary-color;
                     border: 1px solid $border-color;
@@ -102,7 +102,7 @@ nav {
                     }
 
                     .submenu {
-                        top: 120%;
+                        top: 115%;
                         opacity: 1;
                         visibility: visible;
                     }
@@ -119,11 +119,11 @@ nav {
         background: $secondary-color;
 
         @include tablet {
-            margin-top: 88px;
+            margin-top: 80px;
         }
 
         @include all-phone {
-            margin-top: 88px;
+            margin-top: 80px;
         }
     }
 
@@ -136,11 +136,11 @@ nav {
             right: 20px !important;
 
             @include tablet {
-                top: 17px;
+                top: 14px;
             }
 
             @include all-phone {
-                top: 17px;
+                top: 14px;
             }
         }
     }

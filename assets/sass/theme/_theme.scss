@@ -265,6 +265,11 @@
     background-color: $secondary-color;
     padding-bottom: 200px;
     overflow: hidden;
+    .portfolio-slider {
+        @include all-desktop {
+            left: -15px;
+        }
+    }
     .slick-slide {
         margin: 0 50px 0 0;
     }
@@ -631,19 +636,18 @@
 
 .blog-area {
     background-color: $black-color;
+    .blog-slider {
+        @include all-desktop {
+            left: -50px;
+        }
+    }
     .slick-slide {
-        margin: 0 20px;
-        @include tablet {
-            padding-left: 20px;
-        }
-        @include all-phone {
-            padding-left: 20px;
-        }
+        margin: 0 40px;
+        
     }
 }
 
 .blog-single-slide {
-    max-width: 680px;
     .blog-image {
         img {
             border-radius: 20px;
@@ -659,6 +663,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include portrait-phone {
+            display: inherit;
+        }
         li {
             a {
                 color: $primary-color;
@@ -1560,6 +1567,13 @@
     background-color: $black-color;
     .blog-single-slide {
         max-width: 100%;
+        .blog-image {
+            img {
+                &:hover {
+                    border: 1px solid transparent;
+                }
+            }
+        }
         .blog-meta {
             display: flex;
             align-items: center;
@@ -1627,7 +1641,7 @@
             }
             a {
                 color: $white-color;
-                font-size: 24px;
+                font-size: 36px;
                 transition: $transition;
                 &:hover {
                     color: $primary-color;
@@ -1638,7 +1652,7 @@
                     font-size: 16px;
                     color: $black-color;
                     background-color: $white-color;
-                    padding: 5px;
+                    padding: 8px;
                     border-radius: 5px;
                     &:hover {
                         background-color: $primary-color;

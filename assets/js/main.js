@@ -97,7 +97,6 @@
             slidesToShow: 2,
             slidesToScroll: 1,
             arrows: false,
-            centerMode: true,
             responsive: [{
                 breakpoint: 992,
                 settings: {

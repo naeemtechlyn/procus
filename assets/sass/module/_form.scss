@@ -6,6 +6,31 @@
     @include all-phone {
         margin-top: 40px;
     }
+    
+    .budget-option {
+        display: inline-block;
+        margin: 0 10px 10px 0;
+    }
+    
+    .budget-option input {
+        display: none;
+    }
+    
+    .budget-option span {
+        font-size: 16px;
+        display: inline-block;
+        padding: 8px 16px;
+        border: 1px solid $border-color;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .budget-option input:checked + span {
+        background-color: $primary-color;
+        color: $secondary-color;
+        border: 1px solid transparent;
+    }
 }
 
 .contact-form-3 form {
