@@ -253,10 +253,16 @@
 
 .mt-50 {
     margin-top: 50px;
+    @include all-phone {
+        margin-top: 30px;
+    }
 }
 
 .mt-60 {
     margin-top: 60px;
+    @include all-phone {
+        margin-top: 40px;
+    }
 }
 
 .mt-70 {

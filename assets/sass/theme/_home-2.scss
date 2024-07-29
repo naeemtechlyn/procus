@@ -256,6 +256,9 @@
     border-radius: 20px;
     padding: 30px 0;
     line-height: 0;
+    @include all-phone {
+        padding: 30px 20px;
+    }
     &:hover {
         background-color: rgba($primary-color, .1);
         border: 1px solid $primary-color;
@@ -278,6 +281,10 @@
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1px;
         transition: $transition;
+        @include all-phone {
+            font-size: 42px;
+            line-height: 42px;
+        }
         @include desktop {
             font-size: 60px;
         }
@@ -442,10 +449,25 @@ span.big-title {
         height: 230px;
         border: 1px solid $border-color;
         transition: $transition;
+        @include tablet {
+            width: 190px;
+            height: 190px;
+        }
+        @include all-phone {
+            width: 140px;
+            height: 140px;
+        }
         img {
             width: auto;
             margin: auto;
             padding-top: 90px;
+            @include tablet {
+                padding-top: 70px;
+            }
+            @include all-phone {
+                width: 80%;
+                padding-top: 50px;
+            }
         }
     }
 }
@@ -585,11 +607,17 @@ span.big-title {
             li {
                 display: inline;
                 margin: 0 10px;
+                @include landscape-phone {
+                    margin: 0 5px;
+                }
                 a {
                     color: $white-color;
                     font-size: 24px;
                     display: inline-block;
                     transition: $transition;
+                    @include landscape-phone {
+                        font-size: 20px;
+                    }
                     &:hover {
                         color: $primary-color;
                     }
@@ -606,6 +634,9 @@ span.big-title {
     z-index: 1;
     .slick-slide {
         margin: 0 15px;
+        @include all-phone {
+            margin: 0 5px;
+        }
     }
 }
 
@@ -706,6 +737,9 @@ span.big-title {
     background-color: $black-color;
     .slick-slide {
         margin: 0 15px;
+        @include all-phone {
+            margin: 0 5px;
+        }
     }
 }
 

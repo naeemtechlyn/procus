@@ -205,6 +205,10 @@
     border: 1px solid $white-color;
     border-radius: 50%;
     transition: $transition;
+    @include portrait-phone {
+        height: 150px;
+        width: 150px;
+    }
     &:hover {
         background-color: $primary-color;
         border: 1px solid transparent;
@@ -220,6 +224,9 @@
     }
     .counter-number {
         padding-top: 65px;
+        @include portrait-phone {
+            padding-top: 40px;
+        }
     }
     span.counter,
     span.plus-sign {
@@ -230,6 +237,10 @@
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1px;
         transition: $transition;
+        @include portrait-phone {
+            font-size: 42px;
+            line-height: 42px;
+        }
     }
     h6.counter-text {
         transition: $transition;
@@ -378,9 +389,11 @@
 .section-top-btn {
     text-align: right;
     @include tablet {
+        text-align: left;
         margin-top: 20px;
     }
     @include all-phone {
+        text-align: left;
         margin-top: 20px;
     }
 }
@@ -405,6 +418,10 @@
         height: 220px;
         border: 1px solid $white-color;
         border-radius: 50%;
+        @include all-phone {
+            width: 150px;
+            height: 150px;
+        }
         &:hover {
             border: 1px solid $primary-color;
         }
@@ -412,6 +429,9 @@
             width: auto;
             margin: auto;
             padding-top: 85px;
+            @include all-phone {
+                padding-top: 50px;
+            }
         }
     }
     .slick-slide {
@@ -643,6 +663,9 @@
     }
     .slick-slide {
         margin: 0 40px;
+        @include portrait-phone {
+            margin: 0 15px;
+        }
         
     }
 }
@@ -746,10 +769,12 @@
     background-color: $secondary-color;
     text-align: center;
     @include tablet {
-        padding: 60px 0 200px;
+        padding: 60px 0 180px;
+        background-size: cover;
     }
     @include all-phone {
-        padding: 60px 0 200px;
+        padding: 60px 0 180px;
+        background-size: cover;
     }
     a.big-title {
         color: $white-color;

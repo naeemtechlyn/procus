@@ -714,7 +714,7 @@ nav .main-menu li a {
   font-size: 20px;
   text-transform: capitalize;
   display: inline-block;
-  padding: 12px 28px;
+  padding: 8px 16px;
   border: 1px solid #ffffff;
   border-radius: 30px;
   -webkit-transition: all 0.2s ease-in;
@@ -929,20 +929,20 @@ nav .main-menu li a {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .service-area .accordion-list li .answer img.service-image {
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 35px;
   }
 }
 
 @media (max-width: 767.98px) {
   .service-area .accordion-list li .answer img.service-image {
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 35px;
   }
 }
 
 @media (max-width: 575.98px) {
   .service-area .accordion-list li .answer img.service-image {
-    max-width: 280px;
+    max-width: 100%;
   }
 }
 
@@ -1359,7 +1359,7 @@ nav .main-menu li a {
   width: 50px;
   height: 50px;
   line-height: 50px;
-  border-radius: 5px;
+  border-radius: 50%;
   border: 1px solid transparent;
   text-align: center;
   cursor: pointer;
@@ -1414,12 +1414,6 @@ nav .main-menu li a {
   font-size: 18px;
   margin-top: 1px;
   margin-left: 5px;
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .primary-btn {
-    padding: 12px 24px;
-  }
 }
 
 .primary-btn:hover {
@@ -2028,8 +2022,20 @@ nav .main-menu li a {
   margin-top: 50px;
 }
 
+@media (max-width: 767.98px) {
+  .mt-50 {
+    margin-top: 30px;
+  }
+}
+
 .mt-60 {
   margin-top: 60px;
+}
+
+@media (max-width: 767.98px) {
+  .mt-60 {
+    margin-top: 40px;
+  }
 }
 
 .mt-70 {
@@ -2427,6 +2433,13 @@ nav .main-menu li a {
   transition: all 0.2s ease-in;
 }
 
+@media (max-width: 575.98px) {
+  .counter-single {
+    height: 150px;
+    width: 150px;
+  }
+}
+
 .counter-single:hover {
   background-color: #ffff00;
   border: 1px solid transparent;
@@ -2447,6 +2460,12 @@ nav .main-menu li a {
   padding-top: 65px;
 }
 
+@media (max-width: 575.98px) {
+  .counter-single .counter-number {
+    padding-top: 40px;
+  }
+}
+
 .counter-single span.counter,
 .counter-single span.plus-sign {
   color: #ffffff;
@@ -2458,6 +2477,14 @@ nav .main-menu li a {
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+}
+
+@media (max-width: 575.98px) {
+  .counter-single span.counter,
+  .counter-single span.plus-sign {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 
 .counter-single h6.counter-text {
@@ -2644,12 +2671,14 @@ nav .main-menu li a {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .section-top-btn {
+    text-align: left;
     margin-top: 20px;
   }
 }
 
 @media (max-width: 767.98px) {
   .section-top-btn {
+    text-align: left;
     margin-top: 20px;
   }
 }
@@ -2685,6 +2714,13 @@ nav .main-menu li a {
   border-radius: 50%;
 }
 
+@media (max-width: 767.98px) {
+  .brand-area .brand-logo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .brand-area .brand-logo:hover {
   border: 1px solid #ffff00;
 }
@@ -2693,6 +2729,12 @@ nav .main-menu li a {
   width: auto;
   margin: auto;
   padding-top: 85px;
+}
+
+@media (max-width: 767.98px) {
+  .brand-area .brand-logo img {
+    padding-top: 50px;
+  }
 }
 
 .brand-area .slick-slide {
@@ -3004,6 +3046,12 @@ nav .main-menu li a {
   margin: 0 40px;
 }
 
+@media (max-width: 575.98px) {
+  .blog-area .slick-slide {
+    margin: 0 15px;
+  }
+}
+
 .blog-single-slide .blog-image img {
   border-radius: 20px;
   border: 1px solid transparent;
@@ -3130,13 +3178,15 @@ nav .main-menu li a {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .get-in-touch-area {
-    padding: 60px 0 200px;
+    padding: 60px 0 180px;
+    background-size: cover;
   }
 }
 
 @media (max-width: 767.98px) {
   .get-in-touch-area {
-    padding: 60px 0 200px;
+    padding: 60px 0 180px;
+    background-size: cover;
   }
 }
 
@@ -4893,6 +4943,12 @@ nav .main-menu li a {
   line-height: 0;
 }
 
+@media (max-width: 767.98px) {
+  .counter-single-2 {
+    padding: 30px 20px;
+  }
+}
+
 .counter-single-2:hover {
   background-color: rgba(255, 255, 0, 0.1);
   border: 1px solid #ffff00;
@@ -4920,6 +4976,14 @@ nav .main-menu li a {
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+}
+
+@media (max-width: 767.98px) {
+  .counter-single-2 span.counter,
+  .counter-single-2 span.plus-sign {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -5153,10 +5217,37 @@ span.big-title {
   transition: all 0.2s ease-in;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .brand-items .brand-logo {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .brand-items .brand-logo {
+    width: 140px;
+    height: 140px;
+  }
+}
+
 .brand-items .brand-logo img {
   width: auto;
   margin: auto;
   padding-top: 90px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .brand-items .brand-logo img {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .brand-items .brand-logo img {
+    width: 80%;
+    padding-top: 50px;
+  }
 }
 
 .case-study-home-2 {
@@ -5328,6 +5419,12 @@ span.big-title {
   margin: 0 10px;
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .team-member-2 .team-content .team-social li {
+    margin: 0 5px;
+  }
+}
+
 .team-member-2 .team-content .team-social li a {
   color: #ffffff;
   font-size: 24px;
@@ -5335,6 +5432,12 @@ span.big-title {
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .team-member-2 .team-content .team-social li a {
+    font-size: 20px;
+  }
 }
 
 .team-member-2 .team-content .team-social li a:hover {
@@ -5350,6 +5453,12 @@ span.big-title {
 
 .testimonial-home-2 .slick-slide {
   margin: 0 15px;
+}
+
+@media (max-width: 767.98px) {
+  .testimonial-home-2 .slick-slide {
+    margin: 0 5px;
+  }
 }
 
 .testimonial-slide-2 {
@@ -5488,6 +5597,12 @@ span.big-title {
 
 .blog-home-2 .slick-slide {
   margin: 0 15px;
+}
+
+@media (max-width: 767.98px) {
+  .blog-home-2 .slick-slide {
+    margin: 0 5px;
+  }
 }
 
 .blog-single-slide-2 .blog-image {
@@ -5774,6 +5889,18 @@ span.big-title {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .counter-home-3 .title-image img {
     width: 120px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .counter-home-3 .title-image img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .counter-home-3 .title-image img {
+    width: 80px;
   }
 }
 

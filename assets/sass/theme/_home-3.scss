@@ -150,6 +150,12 @@
             @include desktop {
                 width: 120px;
             }
+            @include tablet {
+                width: 80px;
+            }
+            @include all-phone {
+                width: 80px;
+            }
         }
         @include tablet {
             margin-bottom: 30px;
