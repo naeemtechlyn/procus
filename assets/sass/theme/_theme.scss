@@ -209,19 +209,6 @@
         height: 150px;
         width: 150px;
     }
-    &:hover {
-        background-color: $primary-color;
-        border: 1px solid transparent;
-        span.counter,
-        span.plus-sign {
-            color: $secondary-color;
-            -webkit-text-fill-color: $secondary-color;
-            -webkit-text-stroke-width: 0px;
-        }
-        h6 {
-            color: $secondary-color;
-        }
-    }
     .counter-number {
         padding-top: 65px;
         @include portrait-phone {

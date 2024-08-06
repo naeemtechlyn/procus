@@ -2440,22 +2440,6 @@ nav .main-menu li a {
   }
 }
 
-.counter-single:hover {
-  background-color: #ffff00;
-  border: 1px solid transparent;
-}
-
-.counter-single:hover span.counter,
-.counter-single:hover span.plus-sign {
-  color: #141414;
-  -webkit-text-fill-color: #141414;
-  -webkit-text-stroke-width: 0px;
-}
-
-.counter-single:hover h6 {
-  color: #141414;
-}
-
 .counter-single .counter-number {
   padding-top: 65px;
 }
@@ -4947,22 +4931,6 @@ nav .main-menu li a {
   .counter-single-2 {
     padding: 30px 20px;
   }
-}
-
-.counter-single-2:hover {
-  background-color: rgba(255, 255, 0, 0.1);
-  border: 1px solid #ffff00;
-}
-
-.counter-single-2:hover span.counter,
-.counter-single-2:hover span.plus-sign {
-  color: #ffff00;
-  -webkit-text-fill-color: #ffff00;
-  -webkit-text-stroke-width: 0px;
-}
-
-.counter-single-2:hover h6 {
-  color: #ffff00;
 }
 
 .counter-single-2 span.counter,
