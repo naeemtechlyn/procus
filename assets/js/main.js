@@ -77,14 +77,13 @@
         $('.testimonial-slider').slick({
             dots: true,
             infinite: true,
+            fade: true,
             speed: 1000,
             autoplay: true,
             autoplaySpeed: 2000,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            vertical: true,
-            verticalSwiping: true,
         });
 
         // blog slider

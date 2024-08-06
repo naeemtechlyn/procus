@@ -2789,17 +2789,17 @@ nav .main-menu li a {
 }
 
 .testimonial-area .slick-dots li {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .testimonial-area .slick-dots button {
   color: transparent;
   background-color: #4F4F4F;
-  width: 15px;
-  height: 15px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   cursor: pointer;
-  line-height: 15px;
+  line-height: 24px;
   border: none;
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
