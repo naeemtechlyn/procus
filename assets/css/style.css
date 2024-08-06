@@ -1391,63 +1391,54 @@ nav .main-menu li a {
 /* button */
 .primary-btn {
   color: #141414;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: capitalize;
-  text-align: center;
-  display: inline-block;
-  padding: 8px 32px 8px 16px;
-  background-color: #ffff00;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  border: 1px solid #ffff00;
   border-radius: 30px;
-  border: 1px solid transparent;
-  position: relative;
-}
-
-.primary-btn span {
-  position: absolute;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  text-align: center;
+  font-weight: 500;
+  display: inline-block;
+  padding: 8px 0;
+  width: 140px;
   font-size: 18px;
-  margin-top: 1px;
-  margin-left: 5px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #ffff00));
+  background: -webkit-linear-gradient(left, transparent 50%, #ffff00 50%);
+  background: -o-linear-gradient(left, transparent 50%, #ffff00 50%);
+  background: linear-gradient(to right, transparent 50%, #ffff00 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 .primary-btn:hover {
+  background-position: left bottom;
   color: #ffff00;
-  background-color: transparent;
-  border: 1px solid #ffff00;
 }
 
 .secondary-btn {
   color: #ffff00;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: capitalize;
-  text-align: center;
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: transparent;
   border: 1px solid #ffff00;
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
   border-radius: 30px;
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .secondary-btn {
-    padding: 12px 24px;
-  }
+  text-align: center;
+  font-weight: 500;
+  display: inline-block;
+  padding: 9px 0;
+  width: 150px;
+  font-size: 18px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffff00), color-stop(50%, transparent));
+  background: -webkit-linear-gradient(left, #ffff00 50%, transparent 50%);
+  background: -o-linear-gradient(left, #ffff00 50%, transparent 50%);
+  background: linear-gradient(to right, #ffff00 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 .secondary-btn:hover {
+  background-position: left bottom;
   color: #141414;
-  background-color: #ffff00;
-  border: 1px solid transparent;
 }
 
 /* form */
