@@ -1396,8 +1396,9 @@ nav .main-menu li a {
   text-align: center;
   font-weight: 500;
   display: inline-block;
+  text-transform: capitalize;
   padding: 8px 0;
-  width: 140px;
+  width: 150px;
   font-size: 18px;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #ffff00));
   background: -webkit-linear-gradient(left, transparent 50%, #ffff00 50%);
@@ -1422,6 +1423,7 @@ nav .main-menu li a {
   text-align: center;
   font-weight: 500;
   display: inline-block;
+  text-transform: capitalize;
   padding: 9px 0;
   width: 150px;
   font-size: 18px;
@@ -5233,10 +5235,12 @@ span.big-title {
   border: 1px solid #6D6D6D;
   font-weight: 400;
   padding: 10px 20px;
+  width: 200px;
   margin: 0 5px 10px 0;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  background: transparent;
   cursor: pointer;
 }
 
@@ -5246,9 +5250,7 @@ span.big-title {
 }
 
 .case-filter-tab li.secondary-btn:hover {
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  background-color: transparent;
+  background: transparent;
 }
 
 .case-filter-tab.item-hidden {

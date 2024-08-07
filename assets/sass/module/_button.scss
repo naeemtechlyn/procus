@@ -6,8 +6,9 @@
     text-align: center;
     font-weight: 500;
     display: inline-block;
+    text-transform: capitalize;
     padding: 8px 0;
-    width: 140px;
+    width: 150px;
     font-size: 18px;
     background: linear-gradient(to right, transparent 50%, $primary-color 50%);
     background-size: 200% 100%;
@@ -27,6 +28,7 @@
     text-align: center;
     font-weight: 500;
     display: inline-block;
+    text-transform: capitalize;
     padding: 9px 0;
     width: 150px;
     font-size: 18px;
