@@ -70,6 +70,12 @@
                 }
             }
         }
+        .dark-version {
+            display: block;
+        }
+        .light-version {
+            display: none;
+        }
     }
     .hero-social {
         position: absolute;
@@ -425,6 +431,14 @@
         margin: 0 15px;
         @include tablet {
             margin: 0 10px;
+        }
+    }
+    .brand-slider {
+        .dark-version {
+            display: block;
+        }
+        .light-version {
+            display: none;
         }
     }
 }

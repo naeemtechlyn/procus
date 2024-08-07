@@ -4,6 +4,12 @@
     border-bottom: 1px solid $border-color;
     padding: 10px 0;
     .logo-area {
+        .dark-version {
+            display: block;
+        }
+        .light-version {
+            display: none;
+        }
         img {
             max-width: 160px;
         }

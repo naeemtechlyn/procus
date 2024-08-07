@@ -1,6 +1,12 @@
 /* footer */
 .footer-area {
     background: $secondary-color;
+    .footer-logo {
+        display: block;
+    }
+    .logo-black {
+        display: none;
+    }
 }
 
 .footer-widget-box {
@@ -39,7 +45,7 @@
 }
 
 .footer-widget-title {
-    color: $white-color;;
+    color: $white-color;
     margin-bottom: 30px;
 }
 
