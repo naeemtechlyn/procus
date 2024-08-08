@@ -12,6 +12,12 @@
     @include all-phone {
         padding: 100px 0;
     }
+    .dark-version {
+        display: block;
+    }
+    .light-version {
+        display: none;
+    }
     .vector-image {
         width: auto;
         position: absolute;

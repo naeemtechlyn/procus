@@ -849,6 +849,12 @@
 
 .choose-section-about {
     background-color: $black-color; 
+    .dark-version {
+        display: block;
+    }
+    .light-version {
+        display: none;
+    }
 }
 
 .single-choose-item {

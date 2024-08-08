@@ -8,6 +8,7 @@ $black-color: #ffffff;
 $border-color: #4F4F4F;
 $home-2-text-color: #6D6D6D;
 $process-slide-bg: #FBFFE7;
+$team-member-light-bg: #e7e7e7;
 
 body.light-theme {
 
@@ -58,6 +59,7 @@ body.light-theme {
         background-color: $secondary-color;
         background-image: url('../images/breadcrumb-bg.png');
         ul {
+            margin-top: 20px;
             li {
                 a {
                     color: $white-color;
@@ -71,6 +73,9 @@ body.light-theme {
                     color: $primary-color;
                     background-color: rgba($primary-color, .1);
                     border: 1px solid $primary-color;
+                }
+                span {
+                    color: $border-color;
                 }
             }
         }
@@ -212,6 +217,15 @@ body.light-theme {
         .info-content {
             border: 1px solid $border-color;
         }
+        .dark-version {
+            display: none;
+        }
+        .light-version {
+            display: block;
+        }
+        span {
+            color: $heading-color;
+        }
     }
 
     /* header */
@@ -219,9 +233,16 @@ body.light-theme {
         background-color: $secondary-color;
         border-bottom: 1px solid $border-color;
     }
+    .menu-area.menu-area-2 {
+        background-color: transparent;
+    }
 
     .menu-area.fixed-top {
         background-color: $secondary-color;
+    }
+    
+    .menu-area.menu-area-2.fixed-top {
+        background-color: $heading-color;
     }
 
     /* navbar */
@@ -277,14 +298,111 @@ body.light-theme {
 
     }
 
+    .menu-area.menu-area-2 {
+        nav {
+            // home menu
+            .main-menu {
+                li {
+                    &.has-submenu {
+                        &::after {
+                            color: $black-color;
+                        }
+    
+                    }
+                    a {
+                        color: $black-color;
+                    }
+    
+                    @include all-desktop {
+                        // submenu
+                        .submenu {
+                            background: $primary-color;
+                            border: 1px solid $border-color;
+                            li {
+                                a {
+                                    color: $black-color;
+    
+                                    &:hover {
+                                        color: $dark-primary-color;
+                                    }
+                                }
+    
+                            }
+                        }
+    
+                        &:hover {
+                            &.has-submenu {
+                                &::after {
+                                    color: $dark-primary-color;
+                                }
+                            }
+                            a {
+                                color: $dark-primary-color;
+    
+                                @include tablet {
+                                    color: $black-color;
+                                }
+    
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+
+        // phone menu
+        .mean-container {
+            .mean-nav {
+                background: $secondary-color;
+                ul li a {
+                    border-top: 1px solid $white-color;
+                }
+                ul li a.mean-expand {
+                    color: $white-color;
+                    background-color: $team-member-light-bg;
+                }
+                ul li a.mean-expand:hover {
+                    color: $black-color;
+                }
+                ul li a:hover {
+                    color: $black-color;
+                    background-color: $white-color;
+                }
+                ul li a {
+                    color: $white-color;
+                }
+            }
+            .mean-bar {
+                a.meanmenu-reveal {
+                    background: $black-color;
+                }
+            }
+
+        }
+    }
+
     // phone menu
     .mean-container {
         .mean-nav {
             background: $secondary-color;
+            ul li a {
+                border-top: 1px solid $white-color;
+            }
+            ul li a.mean-expand {
+                color: $white-color;
+                background-color: $team-member-light-bg;
+            }
+            ul li a.mean-expand:hover {
+                color: $black-color;
+            }
+            ul li a:hover {
+                background-color: $white-color;
+            }
         }
         .mean-bar {
             a.meanmenu-reveal {
-                background: $primary-color;
+                background: $black-color;
             }
         }
 
@@ -310,6 +428,7 @@ body.light-theme {
             border: 1px solid $border-color;
         
             .tab-menu-item {
+                color: $white-color;
                 border: 1px solid $border-color;
                 
                 &.active, &:hover {
@@ -324,7 +443,7 @@ body.light-theme {
                 background-color: $secondary-color;
         
                 .accordion-header {
-                    background-color: $secondary-color;
+                    background-color: $team-member-light-bg;
                     color: $heading-color;
                     
                     &:after {
@@ -340,7 +459,7 @@ body.light-theme {
                 }
         
                 .accordion-content {
-                    background-color: $secondary-color;
+                    background-color: $team-member-light-bg;
                     color: $heading-color;
                 }
             }
@@ -375,12 +494,16 @@ body.light-theme {
     .contact-form-3 input,
     .contact-form-3 textarea {
         border-bottom: 1px solid #cccccc; /* Example border color */
-        color: #ffffff;
+        color: $primary-color;
+    }
+
+    .contact-form-3 label {
+        color: $heading-color;
     }
 
     .contact-form-3 input::placeholder,
     .contact-form-3 textarea::placeholder {
-        color: rgba(255, 255, 255, 0.5); /* Example white color */
+        color: $border-color; /* Example white color */
     }
 
     .contact-form-3 .radio-buttons {
@@ -388,12 +511,8 @@ body.light-theme {
             border: 1px solid $border-color;
         }
         
-        label {
-            color: $white-color;
-        }
-        
         label::before {
-            border: 1px solid #fff;
+            border: 1px solid $heading-color;
         }
         
         label::after {
@@ -408,12 +527,12 @@ body.light-theme {
 
     .contact-form-3 label.privacy-policy {
         a {
-            color: $white-color;
+            color: $black-color;
         }
     }
 
     .contact-form-3 .attachment-btn {
-        color: #ffffff;
+        color: $white-color;
     }
 
     /* preloader */
@@ -665,6 +784,12 @@ body.light-theme {
 
     .choose-section-about {
         background-color: $black-color; 
+        .dark-version {
+            display: none;
+        }
+        .light-version {
+            display: block;
+        }
     }
 
     .single-choose-item {
@@ -750,21 +875,21 @@ body.light-theme {
     .process-slider-part {
         border-top: 1px solid $border-color;
         .slick-current {
-            background-color: $primary-color!important;
+            background-color: $dark-primary-color!important;
         }
 
         .process-slider-2 {
             .single-slide {
-                background-color: $process-slide-bg;
+                background-color: $team-member-light-bg;
                 span.slide-number {
-                    color: $white-color;
-                    background-color: $secondary-color;
+                    color: $black-color;
+                    background-color: $white-color;
                 }
                 h4 {
-                    color: $secondary-color;
+                    color: $white-color;
                 }
                 p {
-                    color: $secondary-color;
+                    color: $white-color;
                 }
             }
         }
@@ -773,6 +898,9 @@ body.light-theme {
     .team-member-info {
         background-color: $black-color;
         h2 {
+            color: $white-color;
+        }
+        span {
             color: $white-color;
         }
         .member-info-box {
@@ -802,6 +930,7 @@ body.light-theme {
                 color: $white-color;
             }
             ul {
+                margin-top: 10px;
                 li {
                     a {
                         color: $white-color;
@@ -906,6 +1035,7 @@ body.light-theme {
         }
         .preview-links {
             li {
+                color: $white-color;
                 a {
                     color: $white-color;
                     border: 1px solid $white-color;
@@ -974,6 +1104,7 @@ body.light-theme {
         background-color: $black-color;
         .share-links {
             li {
+                color: $heading-color;
                 a {
                     color: $white-color;
                     &:hover {
@@ -991,6 +1122,13 @@ body.light-theme {
                 }
             }
         }
+        .blog-single-slide {
+            .blog-tags {
+                a {
+                    color: $black-color;
+                }
+            }
+        }
     }
 
     .blockquote {
@@ -999,6 +1137,9 @@ body.light-theme {
             h5 {
                 color: $white-color;
             }
+        }
+        span {
+            color: $heading-color;
         }
     }
 
@@ -1031,11 +1172,15 @@ body.light-theme {
     .contact-info-area {
         background-color: $black-color;
         .single-info {
-            border: 1px solid $border-color;
-            background-image: linear-gradient(rgba($secondary-color, .1), rgba($primary-color, .1));
+            border: 1px solid transparent;
+            background-image: none;
+            background-color: transparent;
+            span, h4 {
+                color: $white-color;
+            }
             &.active {
-                border: 1px solid rgba($primary-color, .5);
-                background-image: linear-gradient(rgba($primary-color, .1), rgba($secondary-color, .1));
+                border: 1px solid $border-color;
+                background-image: none;
                 span {
                     &.info-icon {
                         color: $primary-color;
@@ -1055,7 +1200,7 @@ body.light-theme {
 
     .terms-content {
         background-color: $black-color;
-        h3 {
+        h3, li {
             color: $white-color;
         }
         h4 {
@@ -1078,12 +1223,8 @@ body.light-theme {
     }
 
     .error-content {
-        background-color: $black-color;
-        span.error-text {
-            color: $primary-color;
-        }
         h2 {
-            color: $white-color;
+            color: $black-color;
         }
     }
 
@@ -1092,35 +1233,61 @@ body.light-theme {
         background-image: url('../images/hero-bg-home-2.png');
         .hero-content-box-2 {
             .title-tag {
-                background-image: linear-gradient(to right, rgba($black-color, 0.2), rgba($white-color, .2));
+                background-image: linear-gradient(to right, rgba($white-color, 0.2), rgba($black-color, .2));
+                border-radius: 15px;
                 border: 1px solid rgba(255, 255, 255, 0.3);
             }
         }
+        h1,
+        h4,
+        p {
+            color: $black-color;
+        }
         h1 {
             span {
-                color: $primary-color;
+                color: $dark-primary-color;
             }
         }
         .hero-btn-group-2 {
             .hero-video-wrapper a {
-                color: $primary-color;
+                color: $dark-primary-color;
             }
             .hero-video-wrapper a .video-btn {
-                color: $secondary-color;
-                background-color: $primary-color;
+                color: $primary-color;
+                background-color: $dark-primary-color;
             }
+        }
+        .secondary-btn {
+            color: $dark-primary-color;
+            border: 1px solid $dark-primary-color;
+            background: linear-gradient(to right, $dark-primary-color 50%, transparent 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all .3s ease-out;
+        }
+        
+        .secondary-btn:hover {
+          background-position: left bottom;
+          color: $primary-color;
         }
     }
 
     .hero-social-2 {
-        background-image: linear-gradient(to right, rgba($white-color, 0.2), rgba($black-color, .2));
-        border: 1px solid rgba(255, 255, 0, 0.1);
+        background-image: none;
+        border: none;
+        background-color: $team-member-light-bg;
+        display: inline-block;
+        margin-top: 80px;
+        padding: 12px 24px;
+        @include portrait-phone {
+            padding: 12px;
+        }
         li {
             a {
                 color: $white-color;
                 &:hover {
-                    color: $secondary-color;
-                    background-color: $primary-color;
+                    color: $white-color;
+                    background-color: $dark-primary-color;
                 }
             }
         }
@@ -1149,7 +1316,7 @@ body.light-theme {
             li {
                 color: $heading-color;
                 &::before {
-                    background-image: url('../images/about-list-icon.png');
+                    background-image: url('../images/about-list-icon-dark.png');
                 }
             }
         }
@@ -1202,14 +1369,14 @@ body.light-theme {
         }
 
         &.active {
-            background-color: $black-color;
+            background-color: $white-color;
             h2 {
                 a {
-                    color: $white-color;
+                    color: $black-color;
                 }
             }
             p {
-                color: $white-color;
+                color: $black-color;
             }
         }
     }
@@ -1292,10 +1459,10 @@ body.light-theme {
             }
         }
         .team-image {
-            background-image: url('../images/team-bg-home-2.png');
+            background-image: url('../images/team-dark-bg-home-2.png');
         }
         .team-content {
-            background-color: $border-color;
+            background-color: $team-member-light-bg;
             h4 {
                 a {
                     color: $white-color;
@@ -1329,7 +1496,7 @@ body.light-theme {
         &:hover {
             border: 1px solid $primary-color;
             span.testimonial-quote-icon {
-                color: $primary-color;
+                color: $team-member-light-bg;
             }
 
             span.quote-text {
@@ -1348,7 +1515,7 @@ body.light-theme {
             }
         }
         span.testimonial-quote-icon {
-            color: $border-color;
+            color: $team-member-light-bg;
         }
 
         span.quote-text {
@@ -1391,11 +1558,20 @@ body.light-theme {
 
     /* home-03 */
     .hero-home-3 {
-        background-image: url('../images/hero-bg-home-3.png');
+        background-image: url('../images/hero-light-bg-home-3.png');
         h1 {
             span {
                 color: $primary-color;
             }
+        }
+        .dark-version {
+            display: none;
+        }
+        .light-version {
+            display: block;
+        }
+        .vector-3 {
+            opacity: 1;
         }
     }
 
@@ -1442,9 +1618,9 @@ body.light-theme {
             background-image: url('../images/video-bg.png');
         }
         .video-wrapper a .video-btn {
-            color: $primary-color;
-            border: 1px solid $primary-color;
-            background-color: rgba($primary-color, .1);
+            color: $dark-primary-color;
+            border: 1px solid $dark-primary-color;
+            background-color: rgba($dark-primary-color, .1);
         }
     }
 
@@ -1496,7 +1672,14 @@ body.light-theme {
     }
 
     .testimonial-slide-home-3 {
-        background-color: $secondary-color;
+        background-color: $primary-color;
+        h4 {
+            color: $black-color;
+        }
+        p {
+            color: $team-member-light-bg;
+            text-transform: capitalize;
+        }
     }
 
     .team-home-3 {
@@ -1505,7 +1688,7 @@ body.light-theme {
 
     .team-member-3 {
         .hover-state {
-            background-image: linear-gradient(to top, rgba($primary-color, .7), transparent);
+            background-image: linear-gradient(to top, rgba($dark-primary-color, .7), transparent);
             .team-social {
                 li {
                     a {
@@ -1526,6 +1709,9 @@ body.light-theme {
                     }
                 }
             }
+            span {
+                color: $white-color;
+            }
         }
     }
 
@@ -1545,23 +1731,36 @@ body.light-theme {
     }
 
     .pricing-box {
-        background-color: $secondary-color;
+        background-color: $primary-color;
         h3 {
-            color: $white-color;
+            color: $black-color;
         }
         p {
-            color: $white-color;
+            color: $black-color;
         }
         .price {
-            color: $white-color;
+            color: $black-color;
         }
         .pricing-features {
             li {
-                color: $white-color;
+                color: $black-color;
                 &::before {
                     background-image: url('../images/about-list-icon.png');
                 }
             }
+        }
+        .secondary-btn {
+            color: $dark-primary-color;
+            border: 1px solid $dark-primary-color;
+            background: linear-gradient(to right, $dark-primary-color 50%, transparent 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all .3s ease-out;
+        }
+        
+        .secondary-btn:hover {
+          background-position: left bottom;
+          color: $primary-color;
         }
     }
 
