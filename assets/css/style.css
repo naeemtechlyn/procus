@@ -2151,6 +2151,69 @@ nav .main-menu li a {
   margin: 100px 0;
 }
 
+.theme-color-switch {
+  position: fixed;
+  top: 200px;
+  right: -5px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  z-index: 9999;
+}
+
+.theme-color-switch .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.theme-color-switch .checkbox-label {
+  background-color: #ffffff;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.theme-color-switch .fa-moon {
+  color: #000000;
+}
+
+.theme-color-switch .fa-sun {
+  color: #000000;
+}
+
+.theme-color-switch .checkbox-label .ball {
+  background-color: #ffff00;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.theme-color-switch .checkbox:checked + .checkbox-label .ball {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
 /* theme */
 .hero-area {
   background-image: url("../images/hero-bg.png");
@@ -8277,4 +8340,20 @@ body.light-theme .secondary-btn {
 body.light-theme .secondary-btn:hover {
   background-position: left bottom;
   color: #ffffff;
+}
+
+body.light-theme .theme-color-switch .checkbox-label {
+  background-color: #000000;
+}
+
+body.light-theme .theme-color-switch .fa-moon {
+  color: #ffffff;
+}
+
+body.light-theme .theme-color-switch .fa-sun {
+  color: #ffffff;
+}
+
+body.light-theme .theme-color-switch .checkbox-label .ball {
+  background-color: #ffff00;
 }

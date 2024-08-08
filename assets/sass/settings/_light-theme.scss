@@ -1810,5 +1810,18 @@ body.light-theme {
         color: $secondary-color;
     }
 
+    .theme-color-switch {        
+        .checkbox-label {
+            background-color: $white-color;
+        }
+        
+        .fa-moon {color: $black-color;}
+        
+        .fa-sun {color: $black-color;}
+        
+        .checkbox-label .ball {
+            background-color: $dark-primary-color;
+        } 
+    }
 
 }

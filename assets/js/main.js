@@ -10,6 +10,12 @@
             onePage: false
         });
 
+        // color switch
+        const checkbox = document.getElementById("checkbox")
+        checkbox.addEventListener("change", () => {
+            document.body.classList.toggle("light-theme")
+        })
+
         // counter up
         $('.counter').counterUp({
             delay: 10,
