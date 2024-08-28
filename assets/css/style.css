@@ -70,6 +70,7 @@ h3 {
   color: #B0B0B0;
   font-size: 36px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 @media (max-width: 767.98px) {
@@ -82,6 +83,7 @@ h4 {
   color: #ffffff;
   font-size: 24px;
   font-weight: 500;
+  text-transform: capitalize;
 }
 
 @media (max-width: 767.98px) {
@@ -94,6 +96,7 @@ h5 {
   color: #B0B0B0;
   font-size: 20px;
   font-weight: 500;
+  text-transform: capitalize;
 }
 
 @media (max-width: 767.98px) {
@@ -106,6 +109,7 @@ h6 {
   color: #B0B0B0;
   font-size: 18px;
   font-weight: 500;
+  text-transform: capitalize;
 }
 
 @media (max-width: 767.98px) {
@@ -121,7 +125,6 @@ h4,
 h5,
 h6 {
   font-family: "Space Grotesk", sans-serif;
-  text-transform: capitalize;
   line-height: 1.2;
   margin-bottom: 0;
 }
@@ -282,13 +285,13 @@ nav .main-menu li a {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .mean-container .mean-nav {
-    margin-top: 80px;
+    margin-top: 78px;
   }
 }
 
 @media (max-width: 767.98px) {
   .mean-container .mean-nav {
-    margin-top: 80px;
+    margin-top: 78px;
   }
 }
 
@@ -315,6 +318,14 @@ nav .main-menu li a {
 }
 
 /* header */
+.header-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 .menu-area {
   background-color: #141414;
   border-bottom: 1px solid #4f4f4f;
@@ -815,19 +826,19 @@ nav .main-menu li a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 120px 0;
+  padding: 212px 0 120px;
   text-align: center;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .breadcrumb-section {
-    padding: 100px 0;
+    padding: 192px 0 100px;
   }
 }
 
 @media (max-width: 767.98px) {
   .breadcrumb-section {
-    padding: 80px 0;
+    padding: 172px 0 80px;
   }
 }
 
@@ -2294,20 +2305,20 @@ nav .main-menu li a {
 
 .hero-area .hero-content-box {
   position: relative;
-  padding: 150px 0;
+  padding: 242px 0 150px;
   border-left: 1px solid #4f4f4f;
   border-right: 1px solid #4f4f4f;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .hero-area .hero-content-box {
-    padding: 120px 0 160px 10px;
+    padding: 212px 0 160px 10px;
   }
 }
 
 @media (max-width: 767.98px) {
   .hero-area .hero-content-box {
-    padding: 100px 0 180px 10px;
+    padding: 192px 0 180px 10px;
   }
 }
 
@@ -6338,7 +6349,7 @@ span.big-title {
 /* home-03 */
 .hero-home-3 {
   position: relative;
-  padding: 150px 0;
+  padding: 242px 0 150px;
 }
 
 .hero-home-3 .hero-bg-3 {
@@ -6363,13 +6374,13 @@ span.big-title {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .hero-home-3 {
-    padding: 100px 0;
+    padding: 192px 0 100px;
   }
 }
 
 @media (max-width: 767.98px) {
   .hero-home-3 {
-    padding: 100px 0;
+    padding: 192px 0 100px;
   }
 }
 
@@ -6387,25 +6398,25 @@ span.big-title {
 }
 
 .hero-home-3 .vector-image.vector-1 {
-  top: 9%;
+  top: 15%;
   left: 11%;
 }
 
 @media (min-width: 1400px) and (max-width: 1919.98px) {
   .hero-home-3 .vector-image.vector-1 {
-    top: 5%;
+    top: 10%;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .hero-home-3 .vector-image.vector-1 {
-    top: 5%;
+    top: 10%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .hero-home-3 .vector-image.vector-1 {
-    top: 5%;
+    top: 10%;
   }
 }
 
@@ -6422,25 +6433,25 @@ span.big-title {
 }
 
 .hero-home-3 .vector-image.vector-2 {
-  top: 20%;
+  top: 25%;
   right: 7%;
 }
 
 @media (min-width: 1400px) and (max-width: 1919.98px) {
   .hero-home-3 .vector-image.vector-2 {
-    top: 5%;
+    top: 10%;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .hero-home-3 .vector-image.vector-2 {
-    top: 5%;
+    top: 10%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .hero-home-3 .vector-image.vector-2 {
-    top: 5%;
+    top: 10%;
   }
 }
 

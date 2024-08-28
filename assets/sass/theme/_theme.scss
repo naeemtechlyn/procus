@@ -20,14 +20,14 @@
     }
     .hero-content-box {
         position: relative;
-        padding: 150px 0;
+        padding: 242px 0 150px;
         border-left: 1px solid $border-color;
         border-right: 1px solid $border-color;
         @include tablet {
-            padding: 120px 0 160px 10px;
+            padding: 212px 0 160px 10px;
         }
         @include all-phone {
-            padding: 100px 0 180px 10px;
+            padding: 192px 0 180px 10px;
         }
     }
     p {

@@ -1,4 +1,12 @@
 /* header */
+.header-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
 .menu-area {
     background-color: $secondary-color;
     border-bottom: 1px solid $border-color;

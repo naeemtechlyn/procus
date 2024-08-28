@@ -1,7 +1,7 @@
 /* home-03 */
 .hero-home-3 {
     position: relative;
-    padding: 150px 0;
+    padding: 242px 0 150px;
     .hero-bg-3 {
         position: absolute;
         top: 0;
@@ -20,10 +20,10 @@
         }
     }
     @include tablet {
-        padding: 100px 0;
+        padding: 192px 0 100px;
     }
     @include all-phone {
-        padding: 100px 0;
+        padding: 192px 0 100px;
     }
     .dark-version {
         display: block;
@@ -35,16 +35,16 @@
         width: auto;
         position: absolute;
         &.vector-1 {
-            top: 9%;
+            top: 15%;
             left: 11%;
             @include screen-1400 {
-                top: 5%;
+                top: 10%;
             }
             @include screen-1200 {
-                top: 5%;
+                top: 10%;
             }
             @include desktop {
-                top: 5%;
+                top: 10%;
             }
             @include tablet {
                 display: none;
@@ -54,16 +54,16 @@
             }
         }
         &.vector-2 {
-            top: 20%;
+            top: 25%;
             right: 7%;
             @include screen-1400 {
-                top: 5%;
+                top: 10%;
             }
             @include screen-1200 {
-                top: 5%;
+                top: 10%;
             }
             @include desktop {
-                top: 5%;
+                top: 10%;
             }
             @include tablet {
                 display: none;

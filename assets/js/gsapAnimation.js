@@ -1,46 +1,43 @@
-// Select all elements with the class "title_four"
-const titles = document.querySelectorAll(".main-title");
+// Select all elements with the class "title_one"
+const titleOnes = document.querySelectorAll(".title_one");
 
 // Loop through each selected element
-titles.forEach((title) => {
+titleOnes.forEach((titleOne) => {
     // Create a SplitText instance for each title element
-    var titleSplit = new SplitText(title, {
-        type: "lines,words",
-        linesClass: "split-line",
-        textAlign: "center",
+    var titleOneSplit = new SplitText(titleOne, {
+        type: "words,chars",
+        textAlign: "center", // This should be handled via CSS, not in JS
     });
 
-    // Apply the GSAP animation to each SplitText instance
-    gsap.from(titleSplit.words, {
+    // Apply the GSAP animation to the words
+    gsap.from(titleOneSplit.words, {
         scrollTrigger: {
-            trigger: title,
+            trigger: titleOne,
             toggleActions: "restart none none none",
         },
-        duration: 1.2,
-        y: "100%",
-        rotationY: 10,
-        stagger: .1,
+        duration: 1,
         opacity: 0,
+        x: 20,
+        stagger: 0.02,
+    });
+
+    // Apply the GSAP animation to the characters
+    gsap.from(titleOneSplit.chars, {
+        scrollTrigger: {
+            trigger: titleOne,
+            toggleActions: "restart none none none",
+        },
+        duration: 1,
+        opacity: 0,
+        x: 40,
+        stagger: 0.02,
     });
 });
 
-const titleThree = document.querySelector(".title_three");
-
-var titleThreeSplit = new SplitText(titleThree, {
-    type: "lines",
-    linesClass: "split-line",
-    textAlign: "center",
-});
-
-gsap.from(titleThreeSplit.lines, {
-    scrollTrigger: {
-        trigger: titleThree,
-        toggleActions: "restart none none none",
-    },
-    duration: 1,
-    perspective: "2000px",
-    rotateX: "-120deg",
-    translateY: "90px",
-    stagger: 0.1,
-    opacity: 0,
+const smoother = ScrollSmoother.create({
+    content: "#scrollsmoother-container",
+    smooth: 1.4,
+    normalizeScroll: true,
+    ignoreMobileResize: true,
+    effects: true,
 });
