@@ -36,7 +36,7 @@ titleOnes.forEach((titleOne) => {
 
 const smoother = ScrollSmoother.create({
     content: "#scrollsmoother-container",
-    smooth: 1.4,
+    smooth: 1.3,
     normalizeScroll: true,
     ignoreMobileResize: true,
     effects: true,

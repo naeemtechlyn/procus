@@ -802,6 +802,25 @@ body.light-theme {
             justify-content: center;
             width: fit-content;
             margin: auto;
+
+            @include tablet {
+                font-size: 48px;
+                span {
+                    &.icon {
+                        font-size: 55px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+            @include all-phone {
+                font-size: 40px;
+                span {
+                    &.icon {
+                        font-size: 45px;
+                        margin-top: 4px;
+                    }
+                }
+            } 
             
             &:after {
                 background: $primary-color;
