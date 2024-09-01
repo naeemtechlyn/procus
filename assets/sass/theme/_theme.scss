@@ -623,7 +623,7 @@
     }
     img {
         filter: grayscale(100%);
-        transition: $transition;
+        transition: $transition-long;
     }
     .hover-state {
         position: absolute;
@@ -718,33 +718,16 @@
 /* blog area */
 .blog-area {
     background-color: $black-color;
-    .blog-slider {
-        @include screen-1920-plus {
-            width: 120%;
-        }
-    }
-    .slick-slide {
-        margin: 0 50px 0 0;
-        @include portrait-phone {
-            margin: 0 15px 0 0;
-        }
-        @include landscape-phone {
-            margin: 0 20px 0 0;
-        }
-        @include tablet {
-            margin: 0 20px 0 0;
-        }
-    }
 }
 
 .blog-single-slide {
     .blog-image {
+        overflow: hidden;
+        border-radius: 20px;
         img {
-            border-radius: 20px;
-            border: 1px solid transparent;
-            transition: $transition;
+            transition: $transition-long;
             &:hover {
-                border: 1px solid $primary-color;
+                transform: scale(1.1);
             }
         }
     }

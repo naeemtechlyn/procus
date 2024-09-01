@@ -3135,9 +3135,9 @@ nav .main-menu li a {
 .team-member img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .team-member .hover-state {
@@ -3261,44 +3261,21 @@ nav .main-menu li a {
   background-color: #000000;
 }
 
-@media (min-width: 1920px) {
-  .blog-area .blog-slider {
-    width: 120%;
-  }
-}
-
-.blog-area .slick-slide {
-  margin: 0 50px 0 0;
-}
-
-@media (max-width: 575.98px) {
-  .blog-area .slick-slide {
-    margin: 0 15px 0 0;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .blog-area .slick-slide {
-    margin: 0 20px 0 0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .blog-area .slick-slide {
-    margin: 0 20px 0 0;
-  }
+.blog-single-slide .blog-image {
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .blog-single-slide .blog-image img {
-  border-radius: 20px;
-  border: 1px solid transparent;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .blog-single-slide .blog-image img:hover {
-  border: 1px solid #ffff00;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .blog-single-slide .blog-meta {
@@ -5944,8 +5921,9 @@ span.big-title {
 }
 
 .case-filter-tab li.secondary-btn {
-  width: 200px;
   margin: 0 5px 10px 0;
+  color: #6D6D6D;
+  border: 1px solid #6D6D6D;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
@@ -5970,12 +5948,27 @@ span.big-title {
 
 .case-single {
   margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.case-single .case-image {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 95%;
+  margin-bottom: 20px;
 }
 
 .case-single img {
   border-radius: 20px;
-  margin-bottom: 20px;
-  width: 95%;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.case-single img:hover {
+  -webkit-transform: rotate(2deg) scale(1.1);
+  -ms-transform: rotate(2deg) scale(1.1);
+  transform: rotate(2deg) scale(1.1);
 }
 
 .case-single h3 {
@@ -7048,6 +7041,24 @@ span.big-title {
   margin-bottom: 60px;
 }
 
+.single-portfolio-3 .case-image {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.single-portfolio-3 img {
+  border-radius: 20px;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.single-portfolio-3 img:hover {
+  -webkit-transform: rotate(2deg) scale(1.1);
+  -ms-transform: rotate(2deg) scale(1.1);
+  transform: rotate(2deg) scale(1.1);
+}
+
 .single-portfolio-3 h3 a {
   color: #ffffff;
   -webkit-transition: all 0.3s ease-in;
@@ -7235,9 +7246,9 @@ span.big-title {
 }
 
 .team-member-3 .team-image img {
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .team-member-3 .team-image:hover .hover-state {
@@ -7361,6 +7372,14 @@ span.big-title {
   color: #ffffff;
 }
 
+.pricing-box span.devider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #4f4f4f;
+  margin: 20px 0 10px;
+}
+
 .pricing-box .price {
   color: #ffffff;
   font-size: 60px;
@@ -7394,11 +7413,30 @@ span.big-title {
 
 .pricing-box .secondary-btn {
   margin-top: 30px;
+  width: 100%;
 }
 
 /* blog home 3 */
 .blog-home-3 {
   background-color: #000000;
+}
+
+.blog-home-3 .blog-image {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.blog-home-3 img {
+  border-radius: 20px;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.blog-home-3 img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* contact home 3 */

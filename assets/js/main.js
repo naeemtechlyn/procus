@@ -114,42 +114,6 @@
             }],
         });
 
-        // blog slider
-        $('.blog-slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 1000,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            responsive: [{
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    dots: false,
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    dots: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-            ]
-        });
-
         // magnific popup init
         $(".popup-gallery").magnificPopup({
             delegate: '.popup-img',
