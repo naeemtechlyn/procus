@@ -119,3 +119,44 @@ sections.forEach((section) => {
         duration: 0.8,
     }, 'first-row');
 });
+
+
+// Select all image containers
+const containers = document.querySelectorAll('.portfolio-image');
+
+containers.forEach(container => {
+    const button = container.querySelector('.portfolio-btn');
+
+    container.addEventListener('mouseenter', () => {
+        gsap.to(button, {
+            opacity: 1,       // Show the button on mouse enter
+            duration: 0.5,
+            scale: 1,
+            ease: "power2.out"
+        });
+        container.addEventListener('mousemove', onMouseMove);
+    });
+
+    container.addEventListener('mouseleave', () => {
+        gsap.to(button, {
+            opacity: 0,       // Hide the button on mouse leave
+            duration: 0.5,
+            scale: .6,
+            ease: "power2.out"
+        });
+        container.removeEventListener('mousemove', onMouseMove);
+    });
+
+    function onMouseMove(e) {
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        gsap.to(button, {
+            x: x - rect.width / 2,  // Move button horizontally with mouse
+            y: y - rect.height / 2, // Move button vertically with mouse
+            duration: 0.1,
+            ease: "power1.out"
+        });
+    }
+});

@@ -2734,13 +2734,9 @@ nav .main-menu li a {
   border: 1px solid #ffff00;
 }
 
-.portfolio-single:hover .portfolio-image .portfolio-btn {
-  opacity: 1;
-  visibility: visible;
-}
-
 .portfolio-single .portfolio-image {
   position: relative;
+  overflow: hidden;
 }
 
 .portfolio-single .portfolio-image img {
@@ -2760,9 +2756,6 @@ nav .main-menu li a {
   font-size: 20px;
   font-weight: 500;
   text-transform: capitalize;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
   width: 170px;
   height: 170px;
   line-height: 150px;
@@ -2780,7 +2773,6 @@ nav .main-menu li a {
   -ms-transform: translate(-50%, -50%) rotate(-45deg);
   transform: translate(-50%, -50%) rotate(-45deg);
   opacity: 0;
-  visibility: hidden;
 }
 
 @media (max-width: 767.98px) {
@@ -7026,10 +7018,13 @@ span.big-title {
 
 .service-home-3 .tab-content-item {
   display: none;
+  position: relative;
+  top: 50px;
 }
 
 .service-home-3 .tab-content-item.active {
   display: block;
+  top: 0;
 }
 
 /* portfolio home 3 */
@@ -7131,6 +7126,18 @@ span.big-title {
 
 .testimonial-home-3 .slick-slide {
   margin: 0 15px;
+}
+
+.testimonial-home-3 .testimonial-slider-2-home-3 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.testimonial-home-3 .testimonial-slider-2-home-3 .testimonial-slide-home-3 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .testimonial-slide-home-3 {
@@ -7327,6 +7334,29 @@ span.big-title {
   background-color: #000000;
 }
 
+.pricing-home-3 .pricing-banner {
+  padding: 20px;
+  background-color: #ffff00;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.pricing-home-3 .pricing-banner .marquee {
+  -webkit-animation: marquee 20s linear infinite;
+  animation: marquee 20s linear infinite;
+}
+
+.pricing-home-3 .pricing-banner span {
+  margin: 0 10px;
+  color: #141414;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
 .pricing-toggle {
   border: 1px solid #ffff00;
   padding: 5px;
@@ -7362,6 +7392,10 @@ span.big-title {
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
+}
+
+.pricing-box.popular {
+  border-radius: 0 0 20px 20px;
 }
 
 .pricing-box h3 {

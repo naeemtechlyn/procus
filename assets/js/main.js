@@ -49,6 +49,31 @@
             $("#" + tab_id).addClass('active');
         });
 
+        // mousemove animation
+        var hoverLayer = $(".hero-home-3");
+        var heroImages = [
+            { elem: $(".item1"), translateX: -60, translateY: -70, rotate: -25 },
+            { elem: $(".item2"), translateX: -40, translateY: -50, rotate: 25 },
+            { elem: $(".item3"), translateX: -30, translateY: -40, rotate: 15 },
+            { elem: $(".item4"), translateX: -50, translateY: -60, rotate: -25 },
+            { elem: $(".item5"), translateX: -60, translateY: -70, rotate: -20 },
+            { elem: $(".item6"), translateX: -40, translateY: -50, rotate: 25 },
+            { elem: $(".item7"), translateX: -30, translateY: -40, rotate: 70 },
+            { elem: $(".item8"), translateX: -50, translateY: -60, rotate: 25 },
+            { elem: $(".item9"), translateX: -40, translateY: -50, rotate: 25 },
+            { elem: $(".item10"), translateX: -60, translateY: -70, rotate: -130 }
+        ];
+
+        hoverLayer.mousemove(function(e) {
+            heroImages.forEach(function(image) {
+                var valueX = (e.pageX * -1) / image.translateX;
+                var valueY = (e.pageY * -1) / image.translateY;
+                image.elem.css({
+                    transform: "translate3d(" + valueX + "px," + valueY + "px, 0) rotate(" + image.rotate + "deg)"
+                });
+            });
+        });
+
         // portfolio slider
         $('.portfolio-slider').slick({
             dots: false,
@@ -321,43 +346,41 @@
         // service tab 03
         $('.tab-menu-item').on('click', function() {
             var tabId = $(this).data('tab');
-        
+            
             // Remove active class from all tabs and content items
             $('.tab-menu-item').removeClass('active');
             $('.tab-content-item').removeClass('active').hide(); // Hide all content items
-        
+            
             // Add active class to the clicked tab
             $(this).addClass('active');
-        
-            // Animate the corresponding content item with fade-in-up effect
+            
+            // Animate the corresponding content item with a more pronounced fade-in-up effect
             $('#' + tabId).addClass('active').css({
                 display: 'block',
                 opacity: 0,
-                top: '20px'
+                top: '50px' // Increased top value for more noticeable upward movement
             }).animate({
                 opacity: 1,
                 top: '0'
-            }, 1200); // 500ms for the effect duration
+            }, 1000, 'easeOutCubic'); // Increased duration and added easing effect
         });
-
+        
         // testimonial slider 03
         $('.testimonial-slider-home-3').slick({
             dots: false,
             infinite: true,
-            speed: 10000,
+            speed: 20000,
             autoplay: true,
             autoplaySpeed: 0,
             slidesToShow: 2,
             slidesToScroll: 1,
             cssEase: 'linear',
             arrows: false,
-            centerMode: true,
             responsive: [{
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: true,
                 }
             },
             {
@@ -366,7 +389,6 @@
                     dots: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: false,
                     speed: 5000,
                 }
             },
@@ -376,20 +398,18 @@
         $('.testimonial-slider-2-home-3').slick({
             dots: false,
             infinite: true,
-            speed: 8000,
+            speed: 20000,
             autoplay: true,
             autoplaySpeed: 0,
             slidesToShow: 2,
             slidesToScroll: 1,
             cssEase: 'linear',
             arrows: false,
-            centerMode: true,
             responsive: [{
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: true,
                 }
             },
             {
@@ -398,12 +418,12 @@
                     dots: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: false,
                     speed: 4000,
                 }
             },
             ]
         });
+        
 
         // pricing toggle
         $('.monthly-plans').show();

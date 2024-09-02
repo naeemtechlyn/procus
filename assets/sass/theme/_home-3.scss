@@ -431,10 +431,13 @@
     
     .tab-content-item {
         display: none;
+        position: relative;
+        top: 50px;
     }
     
     .tab-content-item.active {
         display: block;
+        top: 0;
     }
 }
 
@@ -509,6 +512,12 @@
 
     .slick-slide {
         margin: 0 15px;
+    }
+    .testimonial-slider-2-home-3 {
+        transform: rotate(180deg);
+        .testimonial-slide-home-3 {
+            transform: rotate(180deg);
+        }
     }
 }
 
@@ -649,6 +658,25 @@
 /* pricing home 3 */
 .pricing-home-3 {
     background-color: $black-color;
+    .pricing-banner {
+        padding: 20px;
+        background-color: $primary-color;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        .marquee {
+            animation: marquee 20s linear infinite;
+        }
+        span {
+            margin: 0 10px;
+            color: $secondary-color;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: capitalize;
+            display: inline-block;
+        }
+    }
 }
 
 .pricing-toggle {
@@ -681,6 +709,9 @@
     border-radius: 20px;
     margin-bottom: 30px;
     transition: $transition;
+    &.popular {
+        border-radius: 0 0 20px 20px;
+    }
     h3 {
         color: $white-color;
     }
