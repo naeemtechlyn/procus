@@ -164,6 +164,14 @@ img {
   display: block;
 }
 
+section,
+div.custom-marquee,
+div.get-in-touch-area,
+div.cta-area,
+div.video-home-3 {
+  margin-bottom: -1px;
+}
+
 /* navbar */
 nav {
   text-align: center;
@@ -3603,6 +3611,18 @@ nav .main-menu li a {
   overflow: hidden;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .working-process-services .working-process-left {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .working-process-services .working-process-left {
+    margin-bottom: 50px;
+  }
+}
+
 .working-process-services .slick-slide {
   padding: 40px 30px;
   border: 1px solid #4f4f4f;
@@ -3651,7 +3671,12 @@ nav .main-menu li a {
 .working-process-slider {
   position: relative;
   z-index: 1;
-  scale: 1.1;
+}
+
+@media (min-width: 992px) {
+  .working-process-slider {
+    scale: 1.1;
+  }
 }
 
 .working-process-slider::before {

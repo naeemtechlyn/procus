@@ -61,7 +61,6 @@ titleThrees.forEach((titleThree) => {
     });
 });
 
-
 const smoother = ScrollSmoother.create({
     content: "#scrollsmoother-container",
     smooth: 2,
@@ -90,8 +89,6 @@ fadeInUpElements.forEach((element, index) => {
     });
 });
 
-
-
 // Select all elements with the class "section-animation"
 const sections = document.querySelectorAll('.section-animation');
 
@@ -119,7 +116,6 @@ sections.forEach((section) => {
         duration: 0.8,
     }, 'first-row');
 });
-
 
 // Select all image containers
 const containers = document.querySelectorAll('.portfolio-image');
@@ -160,3 +156,4 @@ containers.forEach(container => {
         });
     }
 });
+

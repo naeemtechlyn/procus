@@ -982,6 +982,15 @@
     background-color: $secondary-color;
     overflow: hidden;
 
+    .working-process-left {
+        @include tablet {
+            margin-bottom: 50px;
+        }
+        @include all-phone {
+            margin-bottom: 50px;
+        }
+    }
+
     .slick-slide {
         padding: 40px 30px;
         border: 1px solid $border-color;
@@ -1024,7 +1033,9 @@
 .working-process-slider {
     position: relative;
     z-index: 1;
-    scale: 1.1;
+    @include all-desktop {
+        scale: 1.1;
+    }
     &::before {
         content: '';
         position: absolute;
